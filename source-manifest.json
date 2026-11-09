@@ -1,0 +1,6259 @@
+[
+  {
+    "name": "うんうん",
+    "box": [
+      144,
+      99,
+      198,
+      153
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-0-0",
+    "image": "gifts/gift-3-0-0.png",
+    "sheetIndex": 0,
+    "aliases": []
+  },
+  {
+    "name": "なるほど",
+    "box": [
+      210,
+      99,
+      264,
+      153
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-1-0",
+    "image": "gifts/gift-3-1-0.png",
+    "sheetIndex": 1,
+    "aliases": []
+  },
+  {
+    "name": "わかる",
+    "box": [
+      276,
+      99,
+      330,
+      153
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-2-0",
+    "image": "gifts/gift-3-2-0.png",
+    "sheetIndex": 2,
+    "aliases": []
+  },
+  {
+    "name": "わからん",
+    "box": [
+      342,
+      99,
+      396,
+      153
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-3-0",
+    "image": "gifts/gift-3-3-0.png",
+    "sheetIndex": 3,
+    "aliases": []
+  },
+  {
+    "name": "爆笑",
+    "box": [
+      144,
+      163,
+      198,
+      217
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-005",
+    "image": "gifts/sheet-all-005.png",
+    "sheetIndex": 4,
+    "aliases": []
+  },
+  {
+    "name": "号泣",
+    "box": [
+      210,
+      163,
+      264,
+      217
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-006",
+    "image": "gifts/sheet-all-006.png",
+    "sheetIndex": 5,
+    "aliases": []
+  },
+  {
+    "name": "考え中",
+    "box": [
+      276,
+      163,
+      330,
+      217
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-007",
+    "image": "gifts/sheet-all-007.png",
+    "sheetIndex": 6,
+    "aliases": []
+  },
+  {
+    "name": "好物",
+    "box": [
+      342,
+      163,
+      396,
+      217
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-008",
+    "image": "gifts/sheet-all-008.png",
+    "sheetIndex": 7,
+    "aliases": []
+  },
+  {
+    "name": "祭うちわ",
+    "box": [
+      144,
+      826,
+      198,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-045",
+    "image": "gifts/sheet-all-045.png",
+    "sheetIndex": 44,
+    "aliases": []
+  },
+  {
+    "name": "炎",
+    "box": [
+      421,
+      84,
+      475,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-065",
+    "image": "gifts/sheet-all-065.png",
+    "sheetIndex": 64,
+    "aliases": []
+  },
+  {
+    "name": "１００点",
+    "box": [
+      489,
+      84,
+      543,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-066",
+    "image": "gifts/sheet-all-066.png",
+    "sheetIndex": 65,
+    "aliases": []
+  },
+  {
+    "name": "握手",
+    "box": [
+      556,
+      84,
+      610,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-067",
+    "image": "gifts/sheet-all-067.png",
+    "sheetIndex": 66,
+    "aliases": []
+  },
+  {
+    "name": "ハイ！",
+    "box": [
+      623,
+      84,
+      677,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-1-3",
+    "image": "gifts/gift-3-1-3.png",
+    "sheetIndex": 67,
+    "aliases": []
+  },
+  {
+    "name": "助かる",
+    "box": [
+      421,
+      152,
+      475,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-2-3",
+    "image": "gifts/gift-3-2-3.png",
+    "sheetIndex": 68,
+    "aliases": []
+  },
+  {
+    "name": "クラッカー",
+    "box": [
+      489,
+      152,
+      543,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-070",
+    "image": "gifts/sheet-all-070.png",
+    "sheetIndex": 69,
+    "aliases": []
+  },
+  {
+    "name": "良さそう",
+    "box": [
+      556,
+      152,
+      610,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-4-2",
+    "image": "gifts/gift-3-4-2.png",
+    "sheetIndex": 70,
+    "aliases": []
+  },
+  {
+    "name": "クローバー",
+    "box": [
+      623,
+      152,
+      677,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-072",
+    "image": "gifts/sheet-all-072.png",
+    "sheetIndex": 71,
+    "aliases": []
+  },
+  {
+    "name": "ドリンク",
+    "box": [
+      421,
+      215,
+      475,
+      269
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-073",
+    "image": "gifts/sheet-all-073.png",
+    "sheetIndex": 72,
+    "aliases": []
+  },
+  {
+    "name": "ぴえん",
+    "box": [
+      489,
+      215,
+      543,
+      269
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-7-2",
+    "image": "gifts/gift-3-7-2.png",
+    "sheetIndex": 73,
+    "aliases": []
+  },
+  {
+    "name": "バラ",
+    "box": [
+      556,
+      215,
+      610,
+      269
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-075",
+    "image": "gifts/sheet-all-075.png",
+    "sheetIndex": 74,
+    "aliases": []
+  },
+  {
+    "name": "おかえり",
+    "box": [
+      623,
+      215,
+      677,
+      269
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-076",
+    "image": "gifts/sheet-all-076.png",
+    "sheetIndex": 75,
+    "aliases": []
+  },
+  {
+    "name": "おやすみ",
+    "box": [
+      421,
+      280,
+      475,
+      334
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-077",
+    "image": "gifts/sheet-all-077.png",
+    "sheetIndex": 76,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム オレンジ",
+    "box": [
+      489,
+      280,
+      543,
+      334
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-078",
+    "image": "gifts/sheet-all-078.png",
+    "sheetIndex": 77,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム ピンク",
+    "box": [
+      556,
+      280,
+      610,
+      334
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-079",
+    "image": "gifts/sheet-all-079.png",
+    "sheetIndex": 78,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 白",
+    "box": [
+      623,
+      280,
+      677,
+      334
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-080",
+    "image": "gifts/sheet-all-080.png",
+    "sheetIndex": 79,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 紫",
+    "box": [
+      421,
+      349,
+      475,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-081",
+    "image": "gifts/sheet-all-081.png",
+    "sheetIndex": 80,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 緑",
+    "box": [
+      489,
+      349,
+      543,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-082",
+    "image": "gifts/sheet-all-082.png",
+    "sheetIndex": 81,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 赤",
+    "box": [
+      556,
+      349,
+      610,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-083",
+    "image": "gifts/sheet-all-083.png",
+    "sheetIndex": 82,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 青",
+    "box": [
+      623,
+      349,
+      677,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-084",
+    "image": "gifts/sheet-all-084.png",
+    "sheetIndex": 83,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 黄色",
+    "box": [
+      421,
+      411,
+      475,
+      465
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-085",
+    "image": "gifts/sheet-all-085.png",
+    "sheetIndex": 84,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 黄緑",
+    "box": [
+      489,
+      411,
+      543,
+      465
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-086",
+    "image": "gifts/sheet-all-086.png",
+    "sheetIndex": 85,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 黒",
+    "box": [
+      556,
+      411,
+      610,
+      465
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-087",
+    "image": "gifts/sheet-all-087.png",
+    "sheetIndex": 86,
+    "aliases": []
+  },
+  {
+    "name": "いってきます",
+    "box": [
+      623,
+      411,
+      677,
+      465
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-088",
+    "image": "gifts/sheet-all-088.png",
+    "sheetIndex": 87,
+    "aliases": []
+  },
+  {
+    "name": "いってらっしゃい",
+    "box": [
+      421,
+      480,
+      475,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-089",
+    "image": "gifts/sheet-all-089.png",
+    "sheetIndex": 88,
+    "aliases": []
+  },
+  {
+    "name": "いらっしゃい",
+    "box": [
+      489,
+      480,
+      543,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-090",
+    "image": "gifts/sheet-all-090.png",
+    "sheetIndex": 89,
+    "aliases": []
+  },
+  {
+    "name": "おじゃまします",
+    "box": [
+      556,
+      480,
+      610,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-091",
+    "image": "gifts/sheet-all-091.png",
+    "sheetIndex": 90,
+    "aliases": []
+  },
+  {
+    "name": "非常口",
+    "box": [
+      623,
+      480,
+      677,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-092",
+    "image": "gifts/sheet-all-092.png",
+    "sheetIndex": 91,
+    "aliases": []
+  },
+  {
+    "name": "ただいま",
+    "box": [
+      421,
+      544,
+      475,
+      598
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-093",
+    "image": "gifts/sheet-all-093.png",
+    "sheetIndex": 92,
+    "aliases": []
+  },
+  {
+    "name": "やってる？",
+    "box": [
+      489,
+      544,
+      543,
+      598
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-094",
+    "image": "gifts/sheet-all-094.png",
+    "sheetIndex": 93,
+    "aliases": []
+  },
+  {
+    "name": "らっしゃっせい！",
+    "box": [
+      556,
+      544,
+      610,
+      598
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-095",
+    "image": "gifts/sheet-all-095.png",
+    "sheetIndex": 94,
+    "aliases": []
+  },
+  {
+    "name": "初見さんヤッホー",
+    "box": [
+      623,
+      544,
+      677,
+      598
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-096",
+    "image": "gifts/sheet-all-096.png",
+    "sheetIndex": 95,
+    "aliases": []
+  },
+  {
+    "name": "拳",
+    "box": [
+      421,
+      621,
+      475,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-097",
+    "image": "gifts/sheet-all-097.png",
+    "sheetIndex": 96,
+    "aliases": []
+  },
+  {
+    "name": "ふぅー!!",
+    "box": [
+      489,
+      621,
+      543,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-4-7-1",
+    "image": "gifts/gift-4-7-1.png",
+    "sheetIndex": 97,
+    "aliases": []
+  },
+  {
+    "name": "キャーッ！",
+    "box": [
+      556,
+      621,
+      610,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-11-0-1",
+    "image": "gifts/gift-11-0-1.png",
+    "sheetIndex": 98,
+    "aliases": []
+  },
+  {
+    "name": "おいしいやつっ！",
+    "box": [
+      623,
+      621,
+      677,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-100",
+    "image": "gifts/sheet-all-100.png",
+    "sheetIndex": 99,
+    "aliases": []
+  },
+  {
+    "name": "遅れた!!",
+    "box": [
+      695,
+      84,
+      749,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-129",
+    "image": "gifts/sheet-all-129.png",
+    "sheetIndex": 128,
+    "aliases": []
+  },
+  {
+    "name": "いつもので",
+    "box": [
+      763,
+      84,
+      817,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-5-3",
+    "image": "gifts/gift-3-5-3.png",
+    "sheetIndex": 129,
+    "aliases": []
+  },
+  {
+    "name": "かー",
+    "box": [
+      830,
+      84,
+      884,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-131",
+    "image": "gifts/sheet-all-131.png",
+    "sheetIndex": 130,
+    "aliases": []
+  },
+  {
+    "name": "つー",
+    "box": [
+      899,
+      84,
+      953,
+      138
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-132",
+    "image": "gifts/sheet-all-132.png",
+    "sheetIndex": 131,
+    "aliases": []
+  },
+  {
+    "name": "一体感",
+    "box": [
+      695,
+      152,
+      749,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-3-6-3",
+    "image": "gifts/gift-3-6-3.png",
+    "sheetIndex": 132,
+    "aliases": []
+  },
+  {
+    "name": "乗りなッ！",
+    "box": [
+      763,
+      152,
+      817,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-134",
+    "image": "gifts/sheet-all-134.png",
+    "sheetIndex": 133,
+    "aliases": []
+  },
+  {
+    "name": "降りろ…",
+    "box": [
+      830,
+      152,
+      884,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-135",
+    "image": "gifts/sheet-all-135.png",
+    "sheetIndex": 134,
+    "aliases": []
+  },
+  {
+    "name": "しーっ",
+    "box": [
+      899,
+      152,
+      953,
+      206
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-136",
+    "image": "gifts/sheet-all-136.png",
+    "sheetIndex": 135,
+    "aliases": []
+  },
+  {
+    "name": "はて…？",
+    "box": [
+      695,
+      217,
+      749,
+      271
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-137",
+    "image": "gifts/sheet-all-137.png",
+    "sheetIndex": 136,
+    "aliases": []
+  },
+  {
+    "name": "やれやれ",
+    "box": [
+      763,
+      217,
+      817,
+      271
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-138",
+    "image": "gifts/sheet-all-138.png",
+    "sheetIndex": 137,
+    "aliases": []
+  },
+  {
+    "name": "ドッ",
+    "box": [
+      830,
+      217,
+      884,
+      271
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-139",
+    "image": "gifts/sheet-all-139.png",
+    "sheetIndex": 138,
+    "aliases": []
+  },
+  {
+    "name": "ごはん",
+    "box": [
+      899,
+      217,
+      953,
+      271
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-140",
+    "image": "gifts/sheet-all-140.png",
+    "sheetIndex": 139,
+    "aliases": []
+  },
+  {
+    "name": "すぐ戻る！",
+    "box": [
+      695,
+      281,
+      749,
+      335
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-141",
+    "image": "gifts/sheet-all-141.png",
+    "sheetIndex": 140,
+    "aliases": []
+  },
+  {
+    "name": "トイレ",
+    "box": [
+      763,
+      281,
+      817,
+      335
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-142",
+    "image": "gifts/sheet-all-142.png",
+    "sheetIndex": 141,
+    "aliases": []
+  },
+  {
+    "name": "フロリダ",
+    "box": [
+      830,
+      281,
+      884,
+      335
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-143",
+    "image": "gifts/sheet-all-143.png",
+    "sheetIndex": 142,
+    "aliases": []
+  },
+  {
+    "name": "しごもど",
+    "box": [
+      899,
+      281,
+      953,
+      335
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-144",
+    "image": "gifts/sheet-all-144.png",
+    "sheetIndex": 143,
+    "aliases": []
+  },
+  {
+    "name": "ちょい落ち",
+    "box": [
+      695,
+      347,
+      749,
+      401
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-145",
+    "image": "gifts/sheet-all-145.png",
+    "sheetIndex": 144,
+    "aliases": []
+  },
+  {
+    "name": "サラダバー",
+    "box": [
+      763,
+      347,
+      817,
+      401
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-4-1-0",
+    "image": "gifts/gift-4-1-0.png",
+    "sheetIndex": 145,
+    "aliases": []
+  },
+  {
+    "name": "スッ",
+    "box": [
+      830,
+      347,
+      884,
+      401
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-147",
+    "image": "gifts/sheet-all-147.png",
+    "sheetIndex": 146,
+    "aliases": []
+  },
+  {
+    "name": "かぷかぷ",
+    "box": [
+      899,
+      347,
+      953,
+      401
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-148",
+    "image": "gifts/sheet-all-148.png",
+    "sheetIndex": 147,
+    "aliases": []
+  },
+  {
+    "name": "こらえ笑い",
+    "box": [
+      695,
+      416,
+      749,
+      470
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-149",
+    "image": "gifts/sheet-all-149.png",
+    "sheetIndex": 148,
+    "aliases": []
+  },
+  {
+    "name": "ブフォッ",
+    "box": [
+      763,
+      416,
+      817,
+      470
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-150",
+    "image": "gifts/sheet-all-150.png",
+    "sheetIndex": 149,
+    "aliases": []
+  },
+  {
+    "name": "微笑",
+    "box": [
+      830,
+      416,
+      884,
+      470
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-151",
+    "image": "gifts/sheet-all-151.png",
+    "sheetIndex": 150,
+    "aliases": []
+  },
+  {
+    "name": "真顔",
+    "box": [
+      899,
+      416,
+      953,
+      470
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-152",
+    "image": "gifts/sheet-all-152.png",
+    "sheetIndex": 151,
+    "aliases": []
+  },
+  {
+    "name": "草（植物）",
+    "box": [
+      695,
+      480,
+      749,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-153",
+    "image": "gifts/sheet-all-153.png",
+    "sheetIndex": 152,
+    "aliases": []
+  },
+  {
+    "name": "えへへ",
+    "box": [
+      763,
+      480,
+      817,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-4-3-0",
+    "image": "gifts/gift-4-3-0.png",
+    "sheetIndex": 153,
+    "aliases": []
+  },
+  {
+    "name": "おもしろー",
+    "box": [
+      830,
+      480,
+      884,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-155",
+    "image": "gifts/sheet-all-155.png",
+    "sheetIndex": 154,
+    "aliases": []
+  },
+  {
+    "name": "ガハハ",
+    "box": [
+      899,
+      480,
+      953,
+      534
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-156",
+    "image": "gifts/sheet-all-156.png",
+    "sheetIndex": 155,
+    "aliases": []
+  },
+  {
+    "name": "ズコー",
+    "box": [
+      695,
+      548,
+      749,
+      602
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-157",
+    "image": "gifts/sheet-all-157.png",
+    "sheetIndex": 156,
+    "aliases": []
+  },
+  {
+    "name": "座布団",
+    "box": [
+      763,
+      548,
+      817,
+      602
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-158",
+    "image": "gifts/sheet-all-158.png",
+    "sheetIndex": 157,
+    "aliases": []
+  },
+  {
+    "name": "うぐぅ…",
+    "box": [
+      830,
+      548,
+      884,
+      602
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "gift-4-0-1",
+    "image": "gifts/gift-4-0-1.png",
+    "sheetIndex": 158,
+    "aliases": []
+  },
+  {
+    "name": "ガクブル",
+    "box": [
+      899,
+      548,
+      953,
+      602
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-160",
+    "image": "gifts/sheet-all-160.png",
+    "sheetIndex": 159,
+    "aliases": []
+  },
+  {
+    "name": "ビクッ！？",
+    "box": [
+      695,
+      622,
+      749,
+      676
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-161",
+    "image": "gifts/sheet-all-161.png",
+    "sheetIndex": 160,
+    "aliases": []
+  },
+  {
+    "name": "ファイティン",
+    "box": [
+      763,
+      622,
+      817,
+      676
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-162",
+    "image": "gifts/sheet-all-162.png",
+    "sheetIndex": 161,
+    "aliases": []
+  },
+  {
+    "name": "？？？",
+    "box": [
+      830,
+      622,
+      884,
+      676
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-163",
+    "image": "gifts/sheet-all-163.png",
+    "sheetIndex": 162,
+    "aliases": []
+  },
+  {
+    "name": "あざとい",
+    "box": [
+      899,
+      622,
+      953,
+      676
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-164",
+    "image": "gifts/sheet-all-164.png",
+    "sheetIndex": 163,
+    "aliases": []
+  },
+  {
+    "name": "休んで！",
+    "box": [
+      978,
+      91,
+      1032,
+      145
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-201",
+    "image": "gifts/sheet-all-201.png",
+    "sheetIndex": 200,
+    "aliases": []
+  },
+  {
+    "name": "寝て！",
+    "box": [
+      1045,
+      91,
+      1099,
+      145
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-202",
+    "image": "gifts/sheet-all-202.png",
+    "sheetIndex": 201,
+    "aliases": []
+  },
+  {
+    "name": "食べて！",
+    "box": [
+      1112,
+      91,
+      1166,
+      145
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-203",
+    "image": "gifts/sheet-all-203.png",
+    "sheetIndex": 202,
+    "aliases": []
+  },
+  {
+    "name": "充電中",
+    "box": [
+      1179,
+      91,
+      1233,
+      145
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-204",
+    "image": "gifts/sheet-all-204.png",
+    "sheetIndex": 203,
+    "aliases": []
+  },
+  {
+    "name": "残量100％",
+    "box": [
+      978,
+      153,
+      1032,
+      207
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-205",
+    "image": "gifts/sheet-all-205.png",
+    "sheetIndex": 204,
+    "aliases": []
+  },
+  {
+    "name": "残量1％",
+    "box": [
+      1045,
+      153,
+      1099,
+      207
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-206",
+    "image": "gifts/sheet-all-206.png",
+    "sheetIndex": 205,
+    "aliases": []
+  },
+  {
+    "name": "ふひひ…",
+    "box": [
+      1112,
+      153,
+      1166,
+      207
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-207",
+    "image": "gifts/sheet-all-207.png",
+    "sheetIndex": 206,
+    "aliases": []
+  },
+  {
+    "name": "グー",
+    "box": [
+      1179,
+      153,
+      1233,
+      207
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-208",
+    "image": "gifts/sheet-all-208.png",
+    "sheetIndex": 207,
+    "aliases": []
+  },
+  {
+    "name": "チョキ",
+    "box": [
+      978,
+      219,
+      1032,
+      273
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-209",
+    "image": "gifts/sheet-all-209.png",
+    "sheetIndex": 208,
+    "aliases": []
+  },
+  {
+    "name": "パー",
+    "box": [
+      1045,
+      219,
+      1099,
+      273
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-210",
+    "image": "gifts/sheet-all-210.png",
+    "sheetIndex": 209,
+    "aliases": []
+  },
+  {
+    "name": "ドラムロール",
+    "box": [
+      1112,
+      219,
+      1166,
+      273
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-211",
+    "image": "gifts/sheet-all-211.png",
+    "sheetIndex": 210,
+    "aliases": []
+  },
+  {
+    "name": "ご乱心",
+    "box": [
+      1179,
+      219,
+      1233,
+      273
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-212",
+    "image": "gifts/sheet-all-212.png",
+    "sheetIndex": 211,
+    "aliases": []
+  },
+  {
+    "name": "コッ☆",
+    "box": [
+      978,
+      283,
+      1032,
+      337
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-213",
+    "image": "gifts/sheet-all-213.png",
+    "sheetIndex": 212,
+    "aliases": []
+  },
+  {
+    "name": "プチ岐阜",
+    "box": [
+      1045,
+      283,
+      1099,
+      337
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-214",
+    "image": "gifts/sheet-all-214.png",
+    "sheetIndex": 213,
+    "aliases": []
+  },
+  {
+    "name": "ダジャレ警察",
+    "box": [
+      1112,
+      283,
+      1166,
+      337
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-215",
+    "image": "gifts/sheet-all-215.png",
+    "sheetIndex": 214,
+    "aliases": []
+  },
+  {
+    "name": "逆にね",
+    "box": [
+      1179,
+      283,
+      1233,
+      337
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-216",
+    "image": "gifts/sheet-all-216.png",
+    "sheetIndex": 215,
+    "aliases": []
+  },
+  {
+    "name": "ほこり",
+    "box": [
+      978,
+      349,
+      1032,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-217",
+    "image": "gifts/sheet-all-217.png",
+    "sheetIndex": 216,
+    "aliases": []
+  },
+  {
+    "name": "もやし",
+    "box": [
+      1045,
+      349,
+      1099,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-218",
+    "image": "gifts/sheet-all-218.png",
+    "sheetIndex": 217,
+    "aliases": []
+  },
+  {
+    "name": "キタコレ",
+    "box": [
+      1112,
+      349,
+      1166,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-219",
+    "image": "gifts/sheet-all-219.png",
+    "sheetIndex": 218,
+    "aliases": []
+  },
+  {
+    "name": "ンジャメナ",
+    "box": [
+      1179,
+      349,
+      1233,
+      403
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-220",
+    "image": "gifts/sheet-all-220.png",
+    "sheetIndex": 219,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（さぼぼん）",
+    "box": [
+      978,
+      414,
+      1032,
+      468
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-221",
+    "image": "gifts/sheet-all-221.png",
+    "sheetIndex": 220,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（しらす）",
+    "box": [
+      1045,
+      414,
+      1099,
+      468
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-222",
+    "image": "gifts/sheet-all-222.png",
+    "sheetIndex": 221,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（つむまる）",
+    "box": [
+      1112,
+      414,
+      1166,
+      468
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-223",
+    "image": "gifts/sheet-all-223.png",
+    "sheetIndex": 222,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（ねこころ）",
+    "box": [
+      1179,
+      414,
+      1233,
+      468
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-224",
+    "image": "gifts/sheet-all-224.png",
+    "sheetIndex": 223,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（ぶくちゃ）",
+    "box": [
+      978,
+      491,
+      1032,
+      545
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-225",
+    "image": "gifts/sheet-all-225.png",
+    "sheetIndex": 224,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（ホシーカ）",
+    "box": [
+      1045,
+      491,
+      1099,
+      545
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-226",
+    "image": "gifts/sheet-all-226.png",
+    "sheetIndex": 225,
+    "aliases": []
+  },
+  {
+    "name": "Thank you（ユラミィ）",
+    "box": [
+      1112,
+      491,
+      1166,
+      545
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-227",
+    "image": "gifts/sheet-all-227.png",
+    "sheetIndex": 226,
+    "aliases": []
+  },
+  {
+    "name": "またまたぁ",
+    "box": [
+      1179,
+      491,
+      1233,
+      545
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-228",
+    "image": "gifts/sheet-all-228.png",
+    "sheetIndex": 227,
+    "aliases": []
+  },
+  {
+    "name": "んなアホな",
+    "box": [
+      978,
+      567,
+      1032,
+      621
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-229",
+    "image": "gifts/sheet-all-229.png",
+    "sheetIndex": 228,
+    "aliases": []
+  },
+  {
+    "name": "ニヤリ",
+    "box": [
+      1045,
+      567,
+      1099,
+      621
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-230",
+    "image": "gifts/sheet-all-230.png",
+    "sheetIndex": 229,
+    "aliases": []
+  },
+  {
+    "name": "話聞こか？",
+    "box": [
+      1112,
+      567,
+      1166,
+      621
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1,
+    "id": "sheet-all-231",
+    "image": "gifts/sheet-all-231.png",
+    "sheetIndex": 230,
+    "aliases": []
+  },
+  {
+    "name": "はろー！",
+    "box": [
+      144,
+      240,
+      198,
+      294
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-009",
+    "image": "gifts/sheet-all-009.png",
+    "sheetIndex": 8,
+    "aliases": []
+  },
+  {
+    "name": "ようこそ",
+    "box": [
+      210,
+      240,
+      264,
+      294
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-010",
+    "image": "gifts/sheet-all-010.png",
+    "sheetIndex": 9,
+    "aliases": []
+  },
+  {
+    "name": "おつかれさま",
+    "box": [
+      276,
+      240,
+      330,
+      294
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-011",
+    "image": "gifts/sheet-all-011.png",
+    "sheetIndex": 10,
+    "aliases": []
+  },
+  {
+    "name": "おはよう",
+    "box": [
+      342,
+      240,
+      396,
+      294
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-012",
+    "image": "gifts/sheet-all-012.png",
+    "sheetIndex": 11,
+    "aliases": []
+  },
+  {
+    "name": "こんばんは",
+    "box": [
+      144,
+      302,
+      198,
+      356
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-013",
+    "image": "gifts/sheet-all-013.png",
+    "sheetIndex": 12,
+    "aliases": []
+  },
+  {
+    "name": "バイバイ",
+    "box": [
+      210,
+      302,
+      264,
+      356
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-014",
+    "image": "gifts/sheet-all-014.png",
+    "sheetIndex": 13,
+    "aliases": []
+  },
+  {
+    "name": "キリおめ",
+    "box": [
+      276,
+      302,
+      330,
+      356
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-015",
+    "image": "gifts/sheet-all-015.png",
+    "sheetIndex": 14,
+    "aliases": []
+  },
+  {
+    "name": "ナイギフ",
+    "box": [
+      342,
+      302,
+      396,
+      356
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-016",
+    "image": "gifts/sheet-all-016.png",
+    "sheetIndex": 15,
+    "aliases": []
+  },
+  {
+    "name": "ナイス",
+    "box": [
+      144,
+      364,
+      198,
+      418
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-017",
+    "image": "gifts/sheet-all-017.png",
+    "sheetIndex": 16,
+    "aliases": []
+  },
+  {
+    "name": "ふ〜ん",
+    "box": [
+      210,
+      364,
+      264,
+      418
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-4-0",
+    "image": "gifts/gift-3-4-0.png",
+    "sheetIndex": 17,
+    "aliases": []
+  },
+  {
+    "name": "・・・",
+    "box": [
+      276,
+      364,
+      330,
+      418
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-5-0",
+    "image": "gifts/gift-3-5-0.png",
+    "sheetIndex": 18,
+    "aliases": []
+  },
+  {
+    "name": "？",
+    "box": [
+      342,
+      364,
+      396,
+      418
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-6-0",
+    "image": "gifts/gift-3-6-0.png",
+    "sheetIndex": 19,
+    "aliases": []
+  },
+  {
+    "name": "！？",
+    "box": [
+      144,
+      426,
+      198,
+      480
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-7-0",
+    "image": "gifts/gift-3-7-0.png",
+    "sheetIndex": 20,
+    "aliases": []
+  },
+  {
+    "name": "もういっかい！",
+    "box": [
+      210,
+      426,
+      264,
+      480
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-022",
+    "image": "gifts/sheet-all-022.png",
+    "sheetIndex": 21,
+    "aliases": []
+  },
+  {
+    "name": "ハート",
+    "box": [
+      276,
+      426,
+      330,
+      480
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-11-1-0",
+    "image": "gifts/gift-11-1-0.png",
+    "sheetIndex": 22,
+    "aliases": [
+      "ハート（プチ）"
+    ]
+  },
+  {
+    "name": "ありがとう！",
+    "box": [
+      342,
+      426,
+      396,
+      480
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-4-1",
+    "image": "gifts/gift-3-4-1.png",
+    "sheetIndex": 23,
+    "aliases": []
+  },
+  {
+    "name": "かわいい",
+    "box": [
+      144,
+      488,
+      198,
+      542
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-11-2-0",
+    "image": "gifts/gift-11-2-0.png",
+    "sheetIndex": 24,
+    "aliases": [
+      "かわいい（プチ）"
+    ]
+  },
+  {
+    "name": "やだ",
+    "box": [
+      210,
+      488,
+      264,
+      542
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-5-1",
+    "image": "gifts/gift-3-5-1.png",
+    "sheetIndex": 25,
+    "aliases": []
+  },
+  {
+    "name": "ダウト",
+    "box": [
+      276,
+      488,
+      330,
+      542
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-6-1",
+    "image": "gifts/gift-3-6-1.png",
+    "sheetIndex": 26,
+    "aliases": []
+  },
+  {
+    "name": "ｗｗｗ",
+    "box": [
+      342,
+      488,
+      396,
+      542
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-7-1",
+    "image": "gifts/gift-3-7-1.png",
+    "sheetIndex": 27,
+    "aliases": [
+      "wwwwww"
+    ]
+  },
+  {
+    "name": "草",
+    "box": [
+      144,
+      550,
+      198,
+      604
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-0-2",
+    "image": "gifts/gift-3-0-2.png",
+    "sheetIndex": 28,
+    "aliases": []
+  },
+  {
+    "name": "ざわざわ",
+    "box": [
+      210,
+      550,
+      264,
+      604
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-030",
+    "image": "gifts/sheet-all-030.png",
+    "sheetIndex": 29,
+    "aliases": []
+  },
+  {
+    "name": "神",
+    "box": [
+      276,
+      550,
+      330,
+      604
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-3-1-2",
+    "image": "gifts/gift-3-1-2.png",
+    "sheetIndex": 30,
+    "aliases": []
+  },
+  {
+    "name": "キャンディ",
+    "box": [
+      342,
+      550,
+      396,
+      604
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-032",
+    "image": "gifts/sheet-all-032.png",
+    "sheetIndex": 31,
+    "aliases": []
+  },
+  {
+    "name": "サァーー",
+    "box": [
+      144,
+      621,
+      198,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-033",
+    "image": "gifts/sheet-all-033.png",
+    "sheetIndex": 32,
+    "aliases": []
+  },
+  {
+    "name": "ナムナム",
+    "box": [
+      210,
+      621,
+      264,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-3-1",
+    "image": "gifts/gift-4-3-1.png",
+    "sheetIndex": 33,
+    "aliases": []
+  },
+  {
+    "name": "ヒェッ",
+    "box": [
+      276,
+      621,
+      330,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-4-0",
+    "image": "gifts/gift-4-4-0.png",
+    "sheetIndex": 34,
+    "aliases": []
+  },
+  {
+    "name": "はぁ。",
+    "box": [
+      342,
+      621,
+      396,
+      675
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-036",
+    "image": "gifts/sheet-all-036.png",
+    "sheetIndex": 35,
+    "aliases": []
+  },
+  {
+    "name": "ちょっと",
+    "box": [
+      144,
+      693,
+      198,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-5-0",
+    "image": "gifts/gift-4-5-0.png",
+    "sheetIndex": 36,
+    "aliases": []
+  },
+  {
+    "name": "むっちゃ",
+    "box": [
+      210,
+      693,
+      264,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-6-0",
+    "image": "gifts/gift-4-6-0.png",
+    "sheetIndex": 37,
+    "aliases": []
+  },
+  {
+    "name": "もっと",
+    "box": [
+      276,
+      693,
+      330,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-7-0",
+    "image": "gifts/gift-4-7-0.png",
+    "sheetIndex": 38,
+    "aliases": []
+  },
+  {
+    "name": "完全燃焼",
+    "box": [
+      342,
+      693,
+      396,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-040",
+    "image": "gifts/sheet-all-040.png",
+    "sheetIndex": 39,
+    "aliases": []
+  },
+  {
+    "name": "激熱",
+    "box": [
+      144,
+      756,
+      198,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-041",
+    "image": "gifts/sheet-all-041.png",
+    "sheetIndex": 40,
+    "aliases": []
+  },
+  {
+    "name": "まぶしい",
+    "box": [
+      210,
+      756,
+      264,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-042",
+    "image": "gifts/sheet-all-042.png",
+    "sheetIndex": 41,
+    "aliases": []
+  },
+  {
+    "name": "エナジードリンク",
+    "box": [
+      276,
+      756,
+      330,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-043",
+    "image": "gifts/sheet-all-043.png",
+    "sheetIndex": 42,
+    "aliases": []
+  },
+  {
+    "name": "世界一",
+    "box": [
+      342,
+      756,
+      396,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-044",
+    "image": "gifts/sheet-all-044.png",
+    "sheetIndex": 43,
+    "aliases": []
+  },
+  {
+    "name": "えぐぐ",
+    "box": [
+      210,
+      826,
+      264,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-046",
+    "image": "gifts/sheet-all-046.png",
+    "sheetIndex": 45,
+    "aliases": []
+  },
+  {
+    "name": "すごい",
+    "box": [
+      276,
+      826,
+      330,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-047",
+    "image": "gifts/sheet-all-047.png",
+    "sheetIndex": 46,
+    "aliases": []
+  },
+  {
+    "name": "すばら",
+    "box": [
+      342,
+      826,
+      396,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-048",
+    "image": "gifts/sheet-all-048.png",
+    "sheetIndex": 47,
+    "aliases": []
+  },
+  {
+    "name": "たのしみ",
+    "box": [
+      144,
+      889,
+      198,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-049",
+    "image": "gifts/sheet-all-049.png",
+    "sheetIndex": 48,
+    "aliases": []
+  },
+  {
+    "name": "ええやん",
+    "box": [
+      210,
+      889,
+      264,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-050",
+    "image": "gifts/sheet-all-050.png",
+    "sheetIndex": 49,
+    "aliases": []
+  },
+  {
+    "name": "天才か！？",
+    "box": [
+      276,
+      889,
+      330,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-051",
+    "image": "gifts/sheet-all-051.png",
+    "sheetIndex": 50,
+    "aliases": []
+  },
+  {
+    "name": "最強",
+    "box": [
+      342,
+      889,
+      396,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-052",
+    "image": "gifts/sheet-all-052.png",
+    "sheetIndex": 51,
+    "aliases": []
+  },
+  {
+    "name": "照れ",
+    "box": [
+      144,
+      963,
+      198,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-11-3-0",
+    "image": "gifts/gift-11-3-0.png",
+    "sheetIndex": 52,
+    "aliases": [
+      "照"
+    ]
+  },
+  {
+    "name": "かしこ",
+    "box": [
+      210,
+      963,
+      264,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-054",
+    "image": "gifts/sheet-all-054.png",
+    "sheetIndex": 53,
+    "aliases": []
+  },
+  {
+    "name": "はなまる",
+    "box": [
+      276,
+      963,
+      330,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-055",
+    "image": "gifts/sheet-all-055.png",
+    "sheetIndex": 54,
+    "aliases": []
+  },
+  {
+    "name": "スリスリ",
+    "box": [
+      342,
+      963,
+      396,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-056",
+    "image": "gifts/sheet-all-056.png",
+    "sheetIndex": 55,
+    "aliases": []
+  },
+  {
+    "name": "拍手",
+    "box": [
+      144,
+      1028,
+      198,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-057",
+    "image": "gifts/sheet-all-057.png",
+    "sheetIndex": 56,
+    "aliases": []
+  },
+  {
+    "name": "エモい",
+    "box": [
+      210,
+      1028,
+      264,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-058",
+    "image": "gifts/sheet-all-058.png",
+    "sheetIndex": 57,
+    "aliases": []
+  },
+  {
+    "name": "サイリウム 葱",
+    "box": [
+      276,
+      1028,
+      330,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-059",
+    "image": "gifts/sheet-all-059.png",
+    "sheetIndex": 58,
+    "aliases": []
+  },
+  {
+    "name": "チルい",
+    "box": [
+      342,
+      1028,
+      396,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-060",
+    "image": "gifts/sheet-all-060.png",
+    "sheetIndex": 59,
+    "aliases": []
+  },
+  {
+    "name": "厨二病",
+    "box": [
+      144,
+      1093,
+      198,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-061",
+    "image": "gifts/sheet-all-061.png",
+    "sheetIndex": 60,
+    "aliases": []
+  },
+  {
+    "name": "アフロしらす",
+    "box": [
+      210,
+      1093,
+      264,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-062",
+    "image": "gifts/sheet-all-062.png",
+    "sheetIndex": 61,
+    "aliases": []
+  },
+  {
+    "name": "アンコール",
+    "box": [
+      276,
+      1093,
+      330,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-063",
+    "image": "gifts/sheet-all-063.png",
+    "sheetIndex": 62,
+    "aliases": []
+  },
+  {
+    "name": "ヘドバン",
+    "box": [
+      342,
+      1093,
+      396,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-064",
+    "image": "gifts/sheet-all-064.png",
+    "sheetIndex": 63,
+    "aliases": []
+  },
+  {
+    "name": "おかわり",
+    "box": [
+      421,
+      693,
+      475,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-1-2",
+    "image": "gifts/gift-4-1-2.png",
+    "sheetIndex": 100,
+    "aliases": []
+  },
+  {
+    "name": "満腹",
+    "box": [
+      489,
+      693,
+      543,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-2-2",
+    "image": "gifts/gift-4-2-2.png",
+    "sheetIndex": 101,
+    "aliases": []
+  },
+  {
+    "name": "空腹",
+    "box": [
+      556,
+      693,
+      610,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-3-2",
+    "image": "gifts/gift-4-3-2.png",
+    "sheetIndex": 102,
+    "aliases": []
+  },
+  {
+    "name": "ビタミン不足",
+    "box": [
+      623,
+      693,
+      677,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-104",
+    "image": "gifts/sheet-all-104.png",
+    "sheetIndex": 103,
+    "aliases": []
+  },
+  {
+    "name": "ごっつぁんです",
+    "box": [
+      421,
+      756,
+      475,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-0-3",
+    "image": "gifts/gift-4-0-3.png",
+    "sheetIndex": 104,
+    "aliases": [
+      "ごっつぁん"
+    ]
+  },
+  {
+    "name": "じゅるり",
+    "box": [
+      489,
+      756,
+      543,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-106",
+    "image": "gifts/sheet-all-106.png",
+    "sheetIndex": 105,
+    "aliases": []
+  },
+  {
+    "name": "そんなバナナ",
+    "box": [
+      556,
+      756,
+      610,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-107",
+    "image": "gifts/sheet-all-107.png",
+    "sheetIndex": 106,
+    "aliases": []
+  },
+  {
+    "name": "メシウマ",
+    "box": [
+      623,
+      756,
+      677,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-108",
+    "image": "gifts/sheet-all-108.png",
+    "sheetIndex": 107,
+    "aliases": []
+  },
+  {
+    "name": "かっこいい",
+    "box": [
+      421,
+      826,
+      475,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-109",
+    "image": "gifts/sheet-all-109.png",
+    "sheetIndex": 108,
+    "aliases": []
+  },
+  {
+    "name": "イケボ",
+    "box": [
+      489,
+      826,
+      543,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-110",
+    "image": "gifts/sheet-all-110.png",
+    "sheetIndex": 109,
+    "aliases": []
+  },
+  {
+    "name": "オサレ",
+    "box": [
+      556,
+      826,
+      610,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-2-3",
+    "image": "gifts/gift-4-2-3.png",
+    "sheetIndex": 110,
+    "aliases": []
+  },
+  {
+    "name": "クール",
+    "box": [
+      623,
+      826,
+      677,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-112",
+    "image": "gifts/sheet-all-112.png",
+    "sheetIndex": 111,
+    "aliases": []
+  },
+  {
+    "name": "アニキー！",
+    "box": [
+      421,
+      889,
+      475,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-113",
+    "image": "gifts/sheet-all-113.png",
+    "sheetIndex": 112,
+    "aliases": []
+  },
+  {
+    "name": "仰せのままに",
+    "box": [
+      489,
+      889,
+      543,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-114",
+    "image": "gifts/sheet-all-114.png",
+    "sheetIndex": 113,
+    "aliases": []
+  },
+  {
+    "name": "漢",
+    "box": [
+      556,
+      889,
+      610,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-115",
+    "image": "gifts/sheet-all-115.png",
+    "sheetIndex": 114,
+    "aliases": []
+  },
+  {
+    "name": "鉄アレイ",
+    "box": [
+      623,
+      889,
+      677,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-116",
+    "image": "gifts/sheet-all-116.png",
+    "sheetIndex": 115,
+    "aliases": []
+  },
+  {
+    "name": "いえーい！（ホシーカ）",
+    "box": [
+      421,
+      963,
+      475,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-117",
+    "image": "gifts/sheet-all-117.png",
+    "sheetIndex": 116,
+    "aliases": []
+  },
+  {
+    "name": "うむうむ（ぶくちゃ）",
+    "box": [
+      489,
+      963,
+      543,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-118",
+    "image": "gifts/sheet-all-118.png",
+    "sheetIndex": 117,
+    "aliases": []
+  },
+  {
+    "name": "きゅるん（ユラミィ）",
+    "box": [
+      556,
+      963,
+      610,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-119",
+    "image": "gifts/sheet-all-119.png",
+    "sheetIndex": 118,
+    "aliases": []
+  },
+  {
+    "name": "ごろごろ（ねこころ）",
+    "box": [
+      623,
+      963,
+      677,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-120",
+    "image": "gifts/sheet-all-120.png",
+    "sheetIndex": 119,
+    "aliases": []
+  },
+  {
+    "name": "ぺこぺこ（つむまる）",
+    "box": [
+      421,
+      1028,
+      475,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-121",
+    "image": "gifts/sheet-all-121.png",
+    "sheetIndex": 120,
+    "aliases": []
+  },
+  {
+    "name": "ヤッホー（さぼぼん）",
+    "box": [
+      489,
+      1028,
+      543,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-122",
+    "image": "gifts/sheet-all-122.png",
+    "sheetIndex": 121,
+    "aliases": []
+  },
+  {
+    "name": "あわわ",
+    "box": [
+      556,
+      1028,
+      610,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-4-3",
+    "image": "gifts/gift-4-4-3.png",
+    "sheetIndex": 122,
+    "aliases": []
+  },
+  {
+    "name": "しおしお",
+    "box": [
+      623,
+      1028,
+      677,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-124",
+    "image": "gifts/sheet-all-124.png",
+    "sheetIndex": 123,
+    "aliases": []
+  },
+  {
+    "name": "ほかほか",
+    "box": [
+      421,
+      1093,
+      475,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-6-3",
+    "image": "gifts/gift-4-6-3.png",
+    "sheetIndex": 124,
+    "aliases": []
+  },
+  {
+    "name": "やばーい",
+    "box": [
+      489,
+      1093,
+      543,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-4-7-3",
+    "image": "gifts/gift-4-7-3.png",
+    "sheetIndex": 125,
+    "aliases": []
+  },
+  {
+    "name": "ウケる",
+    "box": [
+      556,
+      1093,
+      610,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-127",
+    "image": "gifts/sheet-all-127.png",
+    "sheetIndex": 126,
+    "aliases": []
+  },
+  {
+    "name": "ヒャッホー！",
+    "box": [
+      623,
+      1093,
+      677,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-128",
+    "image": "gifts/sheet-all-128.png",
+    "sheetIndex": 127,
+    "aliases": []
+  },
+  {
+    "name": "おもしれーやつ",
+    "box": [
+      695,
+      693,
+      749,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-165",
+    "image": "gifts/sheet-all-165.png",
+    "sheetIndex": 164,
+    "aliases": []
+  },
+  {
+    "name": "沼",
+    "box": [
+      763,
+      693,
+      817,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-166",
+    "image": "gifts/sheet-all-166.png",
+    "sheetIndex": 165,
+    "aliases": []
+  },
+  {
+    "name": "かわぼ",
+    "box": [
+      830,
+      693,
+      884,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-11-2-1",
+    "image": "gifts/gift-11-2-1.png",
+    "sheetIndex": 166,
+    "aliases": []
+  },
+  {
+    "name": "癒し〜",
+    "box": [
+      899,
+      693,
+      953,
+      747
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-168",
+    "image": "gifts/sheet-all-168.png",
+    "sheetIndex": 167,
+    "aliases": []
+  },
+  {
+    "name": "耳が幸せ",
+    "box": [
+      695,
+      756,
+      749,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-169",
+    "image": "gifts/sheet-all-169.png",
+    "sheetIndex": 168,
+    "aliases": []
+  },
+  {
+    "name": "鳥肌注意",
+    "box": [
+      763,
+      756,
+      817,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-170",
+    "image": "gifts/sheet-all-170.png",
+    "sheetIndex": 169,
+    "aliases": []
+  },
+  {
+    "name": "はぁい…",
+    "box": [
+      830,
+      756,
+      884,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-171",
+    "image": "gifts/sheet-all-171.png",
+    "sheetIndex": 170,
+    "aliases": []
+  },
+  {
+    "name": "ふんふん…",
+    "box": [
+      899,
+      756,
+      953,
+      810
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-172",
+    "image": "gifts/sheet-all-172.png",
+    "sheetIndex": 171,
+    "aliases": []
+  },
+  {
+    "name": "すやぁ…",
+    "box": [
+      695,
+      826,
+      749,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-173",
+    "image": "gifts/sheet-all-173.png",
+    "sheetIndex": 172,
+    "aliases": []
+  },
+  {
+    "name": "おねが〜い",
+    "box": [
+      763,
+      826,
+      817,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-174",
+    "image": "gifts/sheet-all-174.png",
+    "sheetIndex": 173,
+    "aliases": []
+  },
+  {
+    "name": "ばぁぁ",
+    "box": [
+      830,
+      826,
+      884,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-175",
+    "image": "gifts/sheet-all-175.png",
+    "sheetIndex": 174,
+    "aliases": []
+  },
+  {
+    "name": "ぷんぷん",
+    "box": [
+      899,
+      826,
+      953,
+      880
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-176",
+    "image": "gifts/sheet-all-176.png",
+    "sheetIndex": 175,
+    "aliases": []
+  },
+  {
+    "name": "ふぉっふぉっ",
+    "box": [
+      695,
+      889,
+      749,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-177",
+    "image": "gifts/sheet-all-177.png",
+    "sheetIndex": 176,
+    "aliases": []
+  },
+  {
+    "name": "やりおる",
+    "box": [
+      763,
+      889,
+      817,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-178",
+    "image": "gifts/sheet-all-178.png",
+    "sheetIndex": 177,
+    "aliases": []
+  },
+  {
+    "name": "よかろう",
+    "box": [
+      830,
+      889,
+      884,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-179",
+    "image": "gifts/sheet-all-179.png",
+    "sheetIndex": 178,
+    "aliases": []
+  },
+  {
+    "name": "あとは頼んだ",
+    "box": [
+      899,
+      889,
+      953,
+      943
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-180",
+    "image": "gifts/sheet-all-180.png",
+    "sheetIndex": 179,
+    "aliases": []
+  },
+  {
+    "name": "おねぎします。",
+    "box": [
+      695,
+      963,
+      749,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-181",
+    "image": "gifts/sheet-all-181.png",
+    "sheetIndex": 180,
+    "aliases": []
+  },
+  {
+    "name": "まかセロリ",
+    "box": [
+      763,
+      963,
+      817,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-182",
+    "image": "gifts/sheet-all-182.png",
+    "sheetIndex": 181,
+    "aliases": []
+  },
+  {
+    "name": "ドヤッ",
+    "box": [
+      830,
+      963,
+      884,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-183",
+    "image": "gifts/sheet-all-183.png",
+    "sheetIndex": 182,
+    "aliases": []
+  },
+  {
+    "name": "呼んだ？",
+    "box": [
+      899,
+      963,
+      953,
+      1017
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "gift-11-3-1",
+    "image": "gifts/gift-11-3-1.png",
+    "sheetIndex": 183,
+    "aliases": []
+  },
+  {
+    "name": "メンタルブレイク",
+    "box": [
+      695,
+      1028,
+      749,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-185",
+    "image": "gifts/sheet-all-185.png",
+    "sheetIndex": 184,
+    "aliases": []
+  },
+  {
+    "name": "いっくよー！",
+    "box": [
+      763,
+      1028,
+      817,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-186",
+    "image": "gifts/sheet-all-186.png",
+    "sheetIndex": 185,
+    "aliases": []
+  },
+  {
+    "name": "ぱぁ",
+    "box": [
+      830,
+      1028,
+      884,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-187",
+    "image": "gifts/sheet-all-187.png",
+    "sheetIndex": 186,
+    "aliases": []
+  },
+  {
+    "name": "ばぁぁぁ",
+    "box": [
+      899,
+      1028,
+      953,
+      1082
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-188",
+    "image": "gifts/sheet-all-188.png",
+    "sheetIndex": 187,
+    "aliases": []
+  },
+  {
+    "name": "ヒソヒソ",
+    "box": [
+      695,
+      1093,
+      749,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-189",
+    "image": "gifts/sheet-all-189.png",
+    "sheetIndex": 188,
+    "aliases": []
+  },
+  {
+    "name": "ポカーン",
+    "box": [
+      763,
+      1093,
+      817,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-190",
+    "image": "gifts/sheet-all-190.png",
+    "sheetIndex": 189,
+    "aliases": []
+  },
+  {
+    "name": "閃き",
+    "box": [
+      830,
+      1093,
+      884,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-191",
+    "image": "gifts/sheet-all-191.png",
+    "sheetIndex": 190,
+    "aliases": []
+  },
+  {
+    "name": "のど飴",
+    "box": [
+      899,
+      1093,
+      953,
+      1147
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-192",
+    "image": "gifts/sheet-all-192.png",
+    "sheetIndex": 191,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（さぼぼん）",
+    "box": [
+      693,
+      1201,
+      751,
+      1259
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-193",
+    "image": "gifts/sheet-all-193.png",
+    "sheetIndex": 192,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（しらす）",
+    "box": [
+      761,
+      1201,
+      819,
+      1259
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-194",
+    "image": "gifts/sheet-all-194.png",
+    "sheetIndex": 193,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（つむまる）",
+    "box": [
+      828,
+      1201,
+      886,
+      1259
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-195",
+    "image": "gifts/sheet-all-195.png",
+    "sheetIndex": 194,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（ねこころ）",
+    "box": [
+      897,
+      1201,
+      955,
+      1259
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-196",
+    "image": "gifts/sheet-all-196.png",
+    "sheetIndex": 195,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（ぶくちゃ）",
+    "box": [
+      693,
+      1276,
+      751,
+      1334
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-197",
+    "image": "gifts/sheet-all-197.png",
+    "sheetIndex": 196,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（ホシーカ）",
+    "box": [
+      761,
+      1276,
+      819,
+      1334
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-198",
+    "image": "gifts/sheet-all-198.png",
+    "sheetIndex": 197,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（ユラミィ）",
+    "box": [
+      828,
+      1276,
+      886,
+      1334
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 5,
+    "id": "sheet-all-199",
+    "image": "gifts/sheet-all-199.png",
+    "sheetIndex": 198,
+    "aliases": []
+  },
+  {
+    "name": "シャキーン！",
+    "box": [
+      978,
+      664,
+      1032,
+      718
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-232",
+    "image": "gifts/sheet-all-232.png",
+    "sheetIndex": 231,
+    "aliases": []
+  },
+  {
+    "name": "キラキラ",
+    "box": [
+      1045,
+      664,
+      1099,
+      718
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-233",
+    "image": "gifts/sheet-all-233.png",
+    "sheetIndex": 232,
+    "aliases": []
+  },
+  {
+    "name": "アチッ",
+    "box": [
+      1112,
+      664,
+      1166,
+      718
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-234",
+    "image": "gifts/sheet-all-234.png",
+    "sheetIndex": 233,
+    "aliases": []
+  },
+  {
+    "name": "…つむっ！",
+    "box": [
+      1179,
+      664,
+      1233,
+      718
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-235",
+    "image": "gifts/sheet-all-235.png",
+    "sheetIndex": 234,
+    "aliases": []
+  },
+  {
+    "name": "チャージっ！",
+    "box": [
+      978,
+      720,
+      1032,
+      774
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-236",
+    "image": "gifts/sheet-all-236.png",
+    "sheetIndex": 235,
+    "aliases": []
+  },
+  {
+    "name": "ひんやりタイム",
+    "box": [
+      1045,
+      720,
+      1099,
+      774
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-237",
+    "image": "gifts/sheet-all-237.png",
+    "sheetIndex": 236,
+    "aliases": []
+  },
+  {
+    "name": "…どれ？",
+    "box": [
+      1112,
+      720,
+      1166,
+      774
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-238",
+    "image": "gifts/sheet-all-238.png",
+    "sheetIndex": 237,
+    "aliases": []
+  },
+  {
+    "name": "はらだいこ",
+    "box": [
+      1179,
+      720,
+      1233,
+      774
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-239",
+    "image": "gifts/sheet-all-239.png",
+    "sheetIndex": 238,
+    "aliases": []
+  },
+  {
+    "name": "ぴたんぴたん",
+    "box": [
+      978,
+      786,
+      1032,
+      840
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-240",
+    "image": "gifts/sheet-all-240.png",
+    "sheetIndex": 239,
+    "aliases": []
+  },
+  {
+    "name": "わいわい",
+    "box": [
+      1045,
+      786,
+      1099,
+      840
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-241",
+    "image": "gifts/sheet-all-241.png",
+    "sheetIndex": 240,
+    "aliases": []
+  },
+  {
+    "name": "ノリノリ",
+    "box": [
+      1112,
+      786,
+      1166,
+      840
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-242",
+    "image": "gifts/sheet-all-242.png",
+    "sheetIndex": 241,
+    "aliases": []
+  },
+  {
+    "name": "からの〜？",
+    "box": [
+      1179,
+      786,
+      1233,
+      840
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-243",
+    "image": "gifts/sheet-all-243.png",
+    "sheetIndex": 242,
+    "aliases": []
+  },
+  {
+    "name": "へぇ",
+    "box": [
+      978,
+      855,
+      1032,
+      909
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-244",
+    "image": "gifts/sheet-all-244.png",
+    "sheetIndex": 243,
+    "aliases": []
+  },
+  {
+    "name": "黒歴史",
+    "box": [
+      1045,
+      855,
+      1099,
+      909
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-245",
+    "image": "gifts/sheet-all-245.png",
+    "sheetIndex": 244,
+    "aliases": []
+  },
+  {
+    "name": "フラグ",
+    "box": [
+      1112,
+      855,
+      1166,
+      909
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-246",
+    "image": "gifts/sheet-all-246.png",
+    "sheetIndex": 245,
+    "aliases": []
+  },
+  {
+    "name": "諸伯降臨",
+    "box": [
+      1179,
+      855,
+      1233,
+      909
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-247",
+    "image": "gifts/sheet-all-247.png",
+    "sheetIndex": 246,
+    "aliases": []
+  },
+  {
+    "name": "歌神降臨",
+    "box": [
+      978,
+      932,
+      1032,
+      986
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-248",
+    "image": "gifts/sheet-all-248.png",
+    "sheetIndex": 247,
+    "aliases": []
+  },
+  {
+    "name": "ほんまや",
+    "box": [
+      1045,
+      932,
+      1099,
+      986
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-249",
+    "image": "gifts/sheet-all-249.png",
+    "sheetIndex": 248,
+    "aliases": []
+  },
+  {
+    "name": "平成",
+    "box": [
+      1112,
+      932,
+      1166,
+      986
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-250",
+    "image": "gifts/sheet-all-250.png",
+    "sheetIndex": 249,
+    "aliases": []
+  },
+  {
+    "name": "昭和",
+    "box": [
+      1179,
+      932,
+      1233,
+      986
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-251",
+    "image": "gifts/sheet-all-251.png",
+    "sheetIndex": 250,
+    "aliases": []
+  },
+  {
+    "name": "江戸",
+    "box": [
+      978,
+      998,
+      1032,
+      1052
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-252",
+    "image": "gifts/sheet-all-252.png",
+    "sheetIndex": 251,
+    "aliases": []
+  },
+  {
+    "name": "おかん",
+    "box": [
+      1045,
+      998,
+      1099,
+      1052
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-253",
+    "image": "gifts/sheet-all-253.png",
+    "sheetIndex": 252,
+    "aliases": []
+  },
+  {
+    "name": "ふりふり",
+    "box": [
+      1112,
+      998,
+      1166,
+      1052
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-254",
+    "image": "gifts/sheet-all-254.png",
+    "sheetIndex": 253,
+    "aliases": []
+  },
+  {
+    "name": "チラッ",
+    "box": [
+      1179,
+      998,
+      1233,
+      1052
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-255",
+    "image": "gifts/sheet-all-255.png",
+    "sheetIndex": 254,
+    "aliases": []
+  },
+  {
+    "name": "むふふ",
+    "box": [
+      978,
+      1078,
+      1032,
+      1132
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-256",
+    "image": "gifts/sheet-all-256.png",
+    "sheetIndex": 255,
+    "aliases": []
+  },
+  {
+    "name": "罠",
+    "box": [
+      1045,
+      1078,
+      1099,
+      1132
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-257",
+    "image": "gifts/sheet-all-257.png",
+    "sheetIndex": 256,
+    "aliases": []
+  },
+  {
+    "name": "想定通り",
+    "box": [
+      1112,
+      1078,
+      1166,
+      1132
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-258",
+    "image": "gifts/sheet-all-258.png",
+    "sheetIndex": 257,
+    "aliases": []
+  },
+  {
+    "name": "想定外",
+    "box": [
+      1179,
+      1078,
+      1233,
+      1132
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-259",
+    "image": "gifts/sheet-all-259.png",
+    "sheetIndex": 258,
+    "aliases": []
+  },
+  {
+    "name": "タイムリープ",
+    "box": [
+      978,
+      1149,
+      1032,
+      1203
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-260",
+    "image": "gifts/sheet-all-260.png",
+    "sheetIndex": 259,
+    "aliases": []
+  },
+  {
+    "name": "サァー……",
+    "box": [
+      1045,
+      1149,
+      1099,
+      1203
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10,
+    "id": "sheet-all-261",
+    "image": "gifts/sheet-all-261.png",
+    "sheetIndex": 260,
+    "aliases": []
+  },
+  {
+    "name": "おばけしらす",
+    "box": [
+      1031,
+      1258,
+      1085,
+      1312
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 11,
+    "pointsMax": 99,
+    "id": "sheet-all-262",
+    "image": "gifts/sheet-all-262.png",
+    "sheetIndex": 261,
+    "aliases": []
+  },
+  {
+    "name": "オール",
+    "box": [
+      1116,
+      1255,
+      1170,
+      1309
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 11,
+    "pointsMax": 99,
+    "id": "sheet-all-263",
+    "image": "gifts/sheet-all-263.png",
+    "sheetIndex": 262,
+    "aliases": []
+  },
+  {
+    "name": "10月季節限定（集合）",
+    "box": [
+      897,
+      1276,
+      955,
+      1334
+    ],
+    "group": "10月季節限定",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-200",
+    "image": "gifts/sheet-all-200.png",
+    "sheetIndex": 199,
+    "aliases": []
+  },
+  {
+    "name": "またね",
+    "box": [
+      1268,
+      113,
+      1322,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-264",
+    "image": "gifts/sheet-all-264.png",
+    "sheetIndex": 263,
+    "aliases": []
+  },
+  {
+    "name": "音符",
+    "box": [
+      1323,
+      113,
+      1377,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-265",
+    "image": "gifts/sheet-all-265.png",
+    "sheetIndex": 264,
+    "aliases": []
+  },
+  {
+    "name": "草（大）",
+    "box": [
+      1378,
+      113,
+      1432,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-266",
+    "image": "gifts/sheet-all-266.png",
+    "sheetIndex": 265,
+    "aliases": []
+  },
+  {
+    "name": "お茶",
+    "box": [
+      1433,
+      113,
+      1487,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-267",
+    "image": "gifts/sheet-all-267.png",
+    "sheetIndex": 266,
+    "aliases": []
+  },
+  {
+    "name": "えらい",
+    "box": [
+      1488,
+      113,
+      1542,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-268",
+    "image": "gifts/sheet-all-268.png",
+    "sheetIndex": 267,
+    "aliases": []
+  },
+  {
+    "name": "コングラ",
+    "box": [
+      1543,
+      113,
+      1597,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-269",
+    "image": "gifts/sheet-all-269.png",
+    "sheetIndex": 268,
+    "aliases": []
+  },
+  {
+    "name": "リクエスト",
+    "box": [
+      1598,
+      113,
+      1652,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-270",
+    "image": "gifts/sheet-all-270.png",
+    "sheetIndex": 269,
+    "aliases": []
+  },
+  {
+    "name": "うれピーマン",
+    "box": [
+      1653,
+      113,
+      1707,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-271",
+    "image": "gifts/sheet-all-271.png",
+    "sheetIndex": 270,
+    "aliases": []
+  },
+  {
+    "name": "ツンデレダイス",
+    "box": [
+      1725,
+      113,
+      1779,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-272",
+    "image": "gifts/sheet-all-272.png",
+    "sheetIndex": 271,
+    "aliases": []
+  },
+  {
+    "name": "味見ダイス",
+    "box": [
+      1785,
+      113,
+      1839,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-273",
+    "image": "gifts/sheet-all-273.png",
+    "sheetIndex": 272,
+    "aliases": []
+  },
+  {
+    "name": "方角ダイス",
+    "box": [
+      1845,
+      113,
+      1899,
+      167
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-274",
+    "image": "gifts/sheet-all-274.png",
+    "sheetIndex": 273,
+    "aliases": []
+  },
+  {
+    "name": "Happy Birthday（ねこころ）",
+    "box": [
+      1268,
+      195,
+      1322,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-275",
+    "image": "gifts/sheet-all-275.png",
+    "sheetIndex": 274,
+    "aliases": []
+  },
+  {
+    "name": "Happy Birthday（ホシーカ）",
+    "box": [
+      1340,
+      195,
+      1394,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-276",
+    "image": "gifts/sheet-all-276.png",
+    "sheetIndex": 275,
+    "aliases": []
+  },
+  {
+    "name": "Happy Birthday（つむるん）",
+    "box": [
+      1415,
+      195,
+      1469,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-277",
+    "image": "gifts/sheet-all-277.png",
+    "sheetIndex": 276,
+    "aliases": []
+  },
+  {
+    "name": "Happy Birthday（さぼぼん）",
+    "box": [
+      1488,
+      195,
+      1542,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-278",
+    "image": "gifts/sheet-all-278.png",
+    "sheetIndex": 277,
+    "aliases": []
+  },
+  {
+    "name": "Thank you",
+    "box": [
+      1548,
+      195,
+      1602,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-279",
+    "image": "gifts/sheet-all-279.png",
+    "sheetIndex": 278,
+    "aliases": []
+  },
+  {
+    "name": "直線",
+    "box": [
+      1601,
+      195,
+      1655,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-280",
+    "image": "gifts/sheet-all-280.png",
+    "sheetIndex": 279,
+    "aliases": []
+  },
+  {
+    "name": "・・・（ねこころ）",
+    "box": [
+      1661,
+      195,
+      1715,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-281",
+    "image": "gifts/sheet-all-281.png",
+    "sheetIndex": 280,
+    "aliases": []
+  },
+  {
+    "name": "誰かなダイス",
+    "box": [
+      1728,
+      195,
+      1782,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-282",
+    "image": "gifts/sheet-all-282.png",
+    "sheetIndex": 281,
+    "aliases": []
+  },
+  {
+    "name": "しゃしゃりダイス",
+    "box": [
+      1788,
+      195,
+      1842,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-283",
+    "image": "gifts/sheet-all-283.png",
+    "sheetIndex": 282,
+    "aliases": []
+  },
+  {
+    "name": "肉ダイス",
+    "box": [
+      1848,
+      195,
+      1902,
+      249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-284",
+    "image": "gifts/sheet-all-284.png",
+    "sheetIndex": 283,
+    "aliases": []
+  },
+  {
+    "name": "ありがとう！",
+    "box": [
+      1383,
+      648,
+      1437,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-17",
+    "image": "gifts/gift-sheet-17.png",
+    "sheetIndex": 321,
+    "aliases": [
+      "ありがとう！（100pt）"
+    ]
+  },
+  {
+    "name": "打ち放題ダイス",
+    "box": [
+      1643,
+      1193,
+      1697,
+      1247
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 100,
+    "id": "sheet-all-375",
+    "image": "gifts/sheet-all-375.png",
+    "sheetIndex": 374,
+    "aliases": []
+  },
+  {
+    "name": "クラッカー",
+    "box": [
+      1268,
+      298,
+      1322,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-285",
+    "image": "gifts/sheet-all-285.png",
+    "sheetIndex": 284,
+    "aliases": []
+  },
+  {
+    "name": "バラ（大）",
+    "box": [
+      1323,
+      298,
+      1377,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-286",
+    "image": "gifts/sheet-all-286.png",
+    "sheetIndex": 285,
+    "aliases": []
+  },
+  {
+    "name": "参上",
+    "box": [
+      1378,
+      298,
+      1432,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-287",
+    "image": "gifts/sheet-all-287.png",
+    "sheetIndex": 286,
+    "aliases": []
+  },
+  {
+    "name": "御意",
+    "box": [
+      1433,
+      298,
+      1487,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-288",
+    "image": "gifts/sheet-all-288.png",
+    "sheetIndex": 287,
+    "aliases": []
+  },
+  {
+    "name": "しらすまん",
+    "box": [
+      1488,
+      298,
+      1542,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-289",
+    "image": "gifts/sheet-all-289.png",
+    "sheetIndex": 288,
+    "aliases": []
+  },
+  {
+    "name": "拍手",
+    "box": [
+      1543,
+      298,
+      1597,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-290",
+    "image": "gifts/sheet-all-290.png",
+    "sheetIndex": 289,
+    "aliases": []
+  },
+  {
+    "name": "よーい",
+    "box": [
+      1598,
+      298,
+      1652,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-291",
+    "image": "gifts/sheet-all-291.png",
+    "sheetIndex": 290,
+    "aliases": []
+  },
+  {
+    "name": "サーチライト",
+    "box": [
+      1653,
+      298,
+      1707,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-292",
+    "image": "gifts/sheet-all-292.png",
+    "sheetIndex": 291,
+    "aliases": []
+  },
+  {
+    "name": "ハート（大）",
+    "box": [
+      1708,
+      298,
+      1762,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "gift-11-4-0",
+    "image": "gifts/gift-11-4-0.png",
+    "sheetIndex": 292,
+    "aliases": []
+  },
+  {
+    "name": "ダウト",
+    "box": [
+      1763,
+      298,
+      1817,
+      352
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-294",
+    "image": "gifts/sheet-all-294.png",
+    "sheetIndex": 293,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（さぼぼん）",
+    "box": [
+      1710,
+      1193,
+      1764,
+      1247
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-376",
+    "image": "gifts/sheet-all-376.png",
+    "sheetIndex": 375,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（しらす）",
+    "box": [
+      1776,
+      1193,
+      1830,
+      1247
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-377",
+    "image": "gifts/sheet-all-377.png",
+    "sheetIndex": 376,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（つむまる）",
+    "box": [
+      1843,
+      1193,
+      1897,
+      1247
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-378",
+    "image": "gifts/sheet-all-378.png",
+    "sheetIndex": 377,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（ねこころ）",
+    "box": [
+      1643,
+      1273,
+      1697,
+      1327
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-379",
+    "image": "gifts/sheet-all-379.png",
+    "sheetIndex": 378,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（ぶくちゃ）",
+    "box": [
+      1710,
+      1273,
+      1764,
+      1327
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-380",
+    "image": "gifts/sheet-all-380.png",
+    "sheetIndex": 379,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（ホシーカ）",
+    "box": [
+      1776,
+      1273,
+      1830,
+      1327
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-381",
+    "image": "gifts/sheet-all-381.png",
+    "sheetIndex": 380,
+    "aliases": []
+  },
+  {
+    "name": "かぶって８（ユラミィ）",
+    "box": [
+      1843,
+      1273,
+      1897,
+      1327
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 200,
+    "id": "sheet-all-382",
+    "image": "gifts/sheet-all-382.png",
+    "sheetIndex": 381,
+    "aliases": []
+  },
+  {
+    "name": "怒り",
+    "box": [
+      1263,
+      393,
+      1317,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-295",
+    "image": "gifts/sheet-all-295.png",
+    "sheetIndex": 294,
+    "aliases": []
+  },
+  {
+    "name": "爆弾",
+    "box": [
+      1320,
+      393,
+      1374,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-296",
+    "image": "gifts/sheet-all-296.png",
+    "sheetIndex": 295,
+    "aliases": []
+  },
+  {
+    "name": "カチコチ",
+    "box": [
+      1379,
+      393,
+      1433,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-297",
+    "image": "gifts/sheet-all-297.png",
+    "sheetIndex": 296,
+    "aliases": []
+  },
+  {
+    "name": "蝋燭",
+    "box": [
+      1444,
+      393,
+      1498,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-298",
+    "image": "gifts/sheet-all-298.png",
+    "sheetIndex": 297,
+    "aliases": []
+  },
+  {
+    "name": "どーなっちゃうの",
+    "box": [
+      1506,
+      393,
+      1560,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-299",
+    "image": "gifts/sheet-all-299.png",
+    "sheetIndex": 298,
+    "aliases": []
+  },
+  {
+    "name": "ポジティブ足りてる？",
+    "box": [
+      1568,
+      393,
+      1622,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-300",
+    "image": "gifts/sheet-all-300.png",
+    "sheetIndex": 299,
+    "aliases": []
+  },
+  {
+    "name": "パンケーキ（フルーツ）",
+    "box": [
+      1629,
+      393,
+      1683,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-301",
+    "image": "gifts/sheet-all-301.png",
+    "sheetIndex": 300,
+    "aliases": []
+  },
+  {
+    "name": "パンケーキ（爆弾）",
+    "box": [
+      1688,
+      393,
+      1742,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-302",
+    "image": "gifts/sheet-all-302.png",
+    "sheetIndex": 301,
+    "aliases": []
+  },
+  {
+    "name": "パンケーキ（さぼぼん）",
+    "box": [
+      1749,
+      393,
+      1803,
+      447
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-303",
+    "image": "gifts/sheet-all-303.png",
+    "sheetIndex": 302,
+    "aliases": []
+  },
+  {
+    "name": "お掃除",
+    "box": [
+      1263,
+      467,
+      1317,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-304",
+    "image": "gifts/sheet-all-304.png",
+    "sheetIndex": 303,
+    "aliases": []
+  },
+  {
+    "name": "ちょっと待ったぁぁ！！",
+    "box": [
+      1320,
+      467,
+      1374,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-305",
+    "image": "gifts/sheet-all-305.png",
+    "sheetIndex": 304,
+    "aliases": []
+  },
+  {
+    "name": "アイリスアウト",
+    "box": [
+      1379,
+      467,
+      1433,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-306",
+    "image": "gifts/sheet-all-306.png",
+    "sheetIndex": 305,
+    "aliases": []
+  },
+  {
+    "name": "令和",
+    "box": [
+      1440,
+      467,
+      1494,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-307",
+    "image": "gifts/sheet-all-307.png",
+    "sheetIndex": 306,
+    "aliases": []
+  },
+  {
+    "name": "予算ダイス",
+    "box": [
+      1502,
+      467,
+      1556,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-308",
+    "image": "gifts/sheet-all-308.png",
+    "sheetIndex": 307,
+    "aliases": []
+  },
+  {
+    "name": "THE 宇宙",
+    "box": [
+      1565,
+      467,
+      1619,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-309",
+    "image": "gifts/sheet-all-309.png",
+    "sheetIndex": 308,
+    "aliases": []
+  },
+  {
+    "name": "のりのり一番ノリ",
+    "box": [
+      1628,
+      467,
+      1682,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-310",
+    "image": "gifts/sheet-all-310.png",
+    "sheetIndex": 309,
+    "aliases": []
+  },
+  {
+    "name": "タイムセール",
+    "box": [
+      1728,
+      467,
+      1782,
+      521
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 398,
+    "pointsMin": 300,
+    "pointsMax": 398,
+    "id": "sheet-all-311",
+    "image": "gifts/sheet-all-311.png",
+    "sheetIndex": 310,
+    "aliases": []
+  },
+  {
+    "name": "こんにちは",
+    "box": [
+      1270,
+      568,
+      1324,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-312",
+    "image": "gifts/sheet-all-312.png",
+    "sheetIndex": 311,
+    "aliases": []
+  },
+  {
+    "name": "頑張れ",
+    "box": [
+      1327,
+      568,
+      1381,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-313",
+    "image": "gifts/sheet-all-313.png",
+    "sheetIndex": 312,
+    "aliases": []
+  },
+  {
+    "name": "また来るね！",
+    "box": [
+      1383,
+      568,
+      1437,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-314",
+    "image": "gifts/sheet-all-314.png",
+    "sheetIndex": 313,
+    "aliases": []
+  },
+  {
+    "name": "もういっかい",
+    "box": [
+      1441,
+      568,
+      1495,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-315",
+    "image": "gifts/sheet-all-315.png",
+    "sheetIndex": 314,
+    "aliases": []
+  },
+  {
+    "name": "乾杯",
+    "box": [
+      1497,
+      568,
+      1551,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-21",
+    "image": "gifts/gift-sheet-21.png",
+    "sheetIndex": 315,
+    "aliases": []
+  },
+  {
+    "name": "エモい",
+    "box": [
+      1550,
+      568,
+      1604,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-20",
+    "image": "gifts/gift-sheet-20.png",
+    "sheetIndex": 316,
+    "aliases": []
+  },
+  {
+    "name": "花束",
+    "box": [
+      1597,
+      568,
+      1651,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-22",
+    "image": "gifts/gift-sheet-22.png",
+    "sheetIndex": 317,
+    "aliases": []
+  },
+  {
+    "name": "スポットライト",
+    "box": [
+      1653,
+      568,
+      1707,
+      622
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-23",
+    "image": "gifts/gift-sheet-23.png",
+    "sheetIndex": 318,
+    "aliases": []
+  },
+  {
+    "name": "すこっていい？",
+    "box": [
+      1270,
+      648,
+      1324,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-11-5-0",
+    "image": "gifts/gift-11-5-0.png",
+    "sheetIndex": 319,
+    "aliases": []
+  },
+  {
+    "name": "嫁来な",
+    "box": [
+      1327,
+      648,
+      1381,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-16",
+    "image": "gifts/gift-sheet-16.png",
+    "sheetIndex": 320,
+    "aliases": []
+  },
+  {
+    "name": "ズキューン！",
+    "box": [
+      1441,
+      648,
+      1495,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-18",
+    "image": "gifts/gift-sheet-18.png",
+    "sheetIndex": 322,
+    "aliases": [
+      "スキューン！"
+    ]
+  },
+  {
+    "name": "そういうとこだぞ",
+    "box": [
+      1497,
+      648,
+      1551,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "gift-sheet-19",
+    "image": "gifts/gift-sheet-19.png",
+    "sheetIndex": 323,
+    "aliases": []
+  },
+  {
+    "name": "助かる",
+    "box": [
+      1550,
+      648,
+      1604,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-325",
+    "image": "gifts/sheet-all-325.png",
+    "sheetIndex": 324,
+    "aliases": []
+  },
+  {
+    "name": "ん…？",
+    "box": [
+      1603,
+      648,
+      1657,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-326",
+    "image": "gifts/sheet-all-326.png",
+    "sheetIndex": 325,
+    "aliases": []
+  },
+  {
+    "name": "記者会見",
+    "box": [
+      1653,
+      648,
+      1707,
+      702
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-327",
+    "image": "gifts/sheet-all-327.png",
+    "sheetIndex": 326,
+    "aliases": []
+  },
+  {
+    "name": "うわぁぁん",
+    "box": [
+      1270,
+      721,
+      1324,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-328",
+    "image": "gifts/sheet-all-328.png",
+    "sheetIndex": 327,
+    "aliases": []
+  },
+  {
+    "name": "集中線",
+    "box": [
+      1327,
+      721,
+      1381,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-329",
+    "image": "gifts/sheet-all-329.png",
+    "sheetIndex": 328,
+    "aliases": []
+  },
+  {
+    "name": "警察だ!!",
+    "box": [
+      1383,
+      721,
+      1437,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-330",
+    "image": "gifts/sheet-all-330.png",
+    "sheetIndex": 329,
+    "aliases": []
+  },
+  {
+    "name": "パイ投げ",
+    "box": [
+      1441,
+      721,
+      1495,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-331",
+    "image": "gifts/sheet-all-331.png",
+    "sheetIndex": 330,
+    "aliases": []
+  },
+  {
+    "name": "たいへんよくできました",
+    "box": [
+      1497,
+      721,
+      1551,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-332",
+    "image": "gifts/sheet-all-332.png",
+    "sheetIndex": 331,
+    "aliases": []
+  },
+  {
+    "name": "たらい落とし",
+    "box": [
+      1557,
+      721,
+      1611,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-333",
+    "image": "gifts/sheet-all-333.png",
+    "sheetIndex": 332,
+    "aliases": []
+  },
+  {
+    "name": "しらすレインボー",
+    "box": [
+      1615,
+      721,
+      1669,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-334",
+    "image": "gifts/sheet-all-334.png",
+    "sheetIndex": 333,
+    "aliases": []
+  },
+  {
+    "name": "唐突な愛",
+    "box": [
+      1671,
+      721,
+      1725,
+      775
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-335",
+    "image": "gifts/sheet-all-335.png",
+    "sheetIndex": 334,
+    "aliases": []
+  },
+  {
+    "name": "V.I.P",
+    "box": [
+      1268,
+      805,
+      1322,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-336",
+    "image": "gifts/sheet-all-336.png",
+    "sheetIndex": 335,
+    "aliases": []
+  },
+  {
+    "name": "ウィンクタイム",
+    "box": [
+      1323,
+      805,
+      1377,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-337",
+    "image": "gifts/sheet-all-337.png",
+    "sheetIndex": 336,
+    "aliases": []
+  },
+  {
+    "name": "ギガブルーム",
+    "box": [
+      1388,
+      805,
+      1442,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-338",
+    "image": "gifts/sheet-all-338.png",
+    "sheetIndex": 337,
+    "aliases": []
+  },
+  {
+    "name": "まだ大丈夫",
+    "box": [
+      1448,
+      805,
+      1502,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-339",
+    "image": "gifts/sheet-all-339.png",
+    "sheetIndex": 338,
+    "aliases": []
+  },
+  {
+    "name": "気配感知",
+    "box": [
+      1513,
+      805,
+      1567,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-340",
+    "image": "gifts/sheet-all-340.png",
+    "sheetIndex": 339,
+    "aliases": []
+  },
+  {
+    "name": "お見事！",
+    "box": [
+      1576,
+      805,
+      1630,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-341",
+    "image": "gifts/sheet-all-341.png",
+    "sheetIndex": 340,
+    "aliases": []
+  },
+  {
+    "name": "●REC",
+    "box": [
+      1638,
+      805,
+      1692,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-342",
+    "image": "gifts/sheet-all-342.png",
+    "sheetIndex": 341,
+    "aliases": []
+  },
+  {
+    "name": "みんなで投票",
+    "box": [
+      1703,
+      805,
+      1757,
+      859
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-343",
+    "image": "gifts/sheet-all-343.png",
+    "sheetIndex": 342,
+    "aliases": []
+  },
+  {
+    "name": "ウィンクチャレンジ",
+    "box": [
+      1268,
+      885,
+      1322,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-344",
+    "image": "gifts/sheet-all-344.png",
+    "sheetIndex": 343,
+    "aliases": []
+  },
+  {
+    "name": "猫耳チャレンジ",
+    "box": [
+      1326,
+      885,
+      1380,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-345",
+    "image": "gifts/sheet-all-345.png",
+    "sheetIndex": 344,
+    "aliases": []
+  },
+  {
+    "name": "ミラーボール",
+    "box": [
+      1388,
+      885,
+      1442,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-346",
+    "image": "gifts/sheet-all-346.png",
+    "sheetIndex": 345,
+    "aliases": []
+  },
+  {
+    "name": "ここすき",
+    "box": [
+      1448,
+      885,
+      1502,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-347",
+    "image": "gifts/sheet-all-347.png",
+    "sheetIndex": 346,
+    "aliases": []
+  },
+  {
+    "name": "結界",
+    "box": [
+      1513,
+      885,
+      1567,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-348",
+    "image": "gifts/sheet-all-348.png",
+    "sheetIndex": 347,
+    "aliases": []
+  },
+  {
+    "name": "えっへん天狗",
+    "box": [
+      1576,
+      885,
+      1630,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-349",
+    "image": "gifts/sheet-all-349.png",
+    "sheetIndex": 348,
+    "aliases": []
+  },
+  {
+    "name": "あの日の夕焼け",
+    "box": [
+      1638,
+      885,
+      1692,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-350",
+    "image": "gifts/sheet-all-350.png",
+    "sheetIndex": 349,
+    "aliases": []
+  },
+  {
+    "name": "わいわい星座",
+    "box": [
+      1703,
+      885,
+      1757,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": null,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-351",
+    "image": "gifts/sheet-all-351.png",
+    "sheetIndex": 350,
+    "aliases": []
+  },
+  {
+    "name": "ぺたぺた８っピース！",
+    "box": [
+      1839,
+      1104,
+      1901,
+      1166
+    ],
+    "group": "８周年祭",
+    "source": "user-provided-gift-sheet",
+    "points": 500,
+    "id": "sheet-all-374",
+    "image": "gifts/sheet-all-374.png",
+    "sheetIndex": 373,
+    "aliases": []
+  },
+  {
+    "name": "タピオカ",
+    "box": [
+      1763,
+      885,
+      1817,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 700,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-352",
+    "image": "gifts/sheet-all-352.png",
+    "sheetIndex": 351,
+    "aliases": []
+  },
+  {
+    "name": "おやすみ",
+    "box": [
+      1838,
+      885,
+      1892,
+      939
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 800,
+    "pointsMin": 500,
+    "pointsMax": 800,
+    "id": "sheet-all-353",
+    "image": "gifts/sheet-all-353.png",
+    "sheetIndex": 352,
+    "aliases": []
+  },
+  {
+    "name": "くす玉",
+    "box": [
+      1270,
+      995,
+      1324,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-1",
+    "image": "gifts/gift-sheet-1.png",
+    "sheetIndex": 353,
+    "aliases": []
+  },
+  {
+    "name": "すこ",
+    "box": [
+      1331,
+      995,
+      1385,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-11-6-1",
+    "image": "gifts/gift-11-6-1.png",
+    "sheetIndex": 354,
+    "aliases": []
+  },
+  {
+    "name": "ケーキ（誕生日）",
+    "box": [
+      1394,
+      995,
+      1448,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-2",
+    "image": "gifts/gift-sheet-2.png",
+    "sheetIndex": 355,
+    "aliases": []
+  },
+  {
+    "name": "宝箱",
+    "box": [
+      1453,
+      995,
+      1507,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-3",
+    "image": "gifts/gift-sheet-3.png",
+    "sheetIndex": 356,
+    "aliases": []
+  },
+  {
+    "name": "ライト＆フォグ",
+    "box": [
+      1520,
+      995,
+      1574,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-4",
+    "image": "gifts/gift-sheet-4.png",
+    "sheetIndex": 357,
+    "aliases": []
+  },
+  {
+    "name": "予告タイム",
+    "box": [
+      1592,
+      995,
+      1646,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-5",
+    "image": "gifts/gift-sheet-5.png",
+    "sheetIndex": 358,
+    "aliases": []
+  },
+  {
+    "name": "覚醒",
+    "box": [
+      1663,
+      995,
+      1717,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 1000,
+    "id": "gift-sheet-6",
+    "image": "gifts/gift-sheet-6.png",
+    "sheetIndex": 359,
+    "aliases": []
+  },
+  {
+    "name": "ライブステージ",
+    "box": [
+      1737,
+      995,
+      1791,
+      1049
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 2000,
+    "id": "gift-sheet-7",
+    "image": "gifts/gift-sheet-7.png",
+    "sheetIndex": 360,
+    "aliases": []
+  },
+  {
+    "name": "かわいい！",
+    "box": [
+      1270,
+      1095,
+      1324,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 3000,
+    "id": "gift-11-7-1",
+    "image": "gifts/gift-11-7-1.png",
+    "sheetIndex": 361,
+    "aliases": []
+  },
+  {
+    "name": "缶詰（風船）",
+    "box": [
+      1347,
+      1095,
+      1401,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 3000,
+    "id": "gift-sheet-8",
+    "image": "gifts/gift-sheet-8.png",
+    "sheetIndex": 362,
+    "aliases": []
+  },
+  {
+    "name": "あちらのお客様からです",
+    "box": [
+      1405,
+      1095,
+      1459,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 3000,
+    "id": "gift-sheet-9",
+    "image": "gifts/gift-sheet-9.png",
+    "sheetIndex": 363,
+    "aliases": []
+  },
+  {
+    "name": "イリアム特製パフェ",
+    "box": [
+      1481,
+      1095,
+      1535,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 3000,
+    "id": "gift-sheet-10",
+    "image": "gifts/gift-sheet-10.png",
+    "sheetIndex": 364,
+    "aliases": []
+  },
+  {
+    "name": "尊い",
+    "box": [
+      1546,
+      1095,
+      1600,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5000,
+    "id": "gift-11-0-3",
+    "image": "gifts/gift-11-0-3.png",
+    "sheetIndex": 365,
+    "aliases": []
+  },
+  {
+    "name": "缶詰（花）",
+    "box": [
+      1616,
+      1095,
+      1670,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 5000,
+    "id": "gift-sheet-11",
+    "image": "gifts/gift-sheet-11.png",
+    "sheetIndex": 366,
+    "aliases": []
+  },
+  {
+    "name": "なでなで",
+    "box": [
+      1673,
+      1095,
+      1727,
+      1149
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 7000,
+    "id": "gift-11-1-3",
+    "image": "gifts/gift-11-1-3.png",
+    "sheetIndex": 367,
+    "aliases": [
+      "なでなで",
+      "手ハート"
+    ]
+  },
+  {
+    "name": "大好き",
+    "box": [
+      1270,
+      1195,
+      1324,
+      1249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10000,
+    "id": "gift-11-2-3",
+    "image": "gifts/gift-11-2-3.png",
+    "sheetIndex": 368,
+    "aliases": [
+      "大好き",
+      "だいすき"
+    ]
+  },
+  {
+    "name": "缶詰タワー",
+    "box": [
+      1331,
+      1195,
+      1385,
+      1249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10000,
+    "id": "gift-sheet-12",
+    "image": "gifts/gift-sheet-12.png",
+    "sheetIndex": 369,
+    "aliases": []
+  },
+  {
+    "name": "ハッピーバースデー",
+    "box": [
+      1406,
+      1195,
+      1460,
+      1249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10000,
+    "id": "gift-sheet-13",
+    "image": "gifts/gift-sheet-13.png",
+    "sheetIndex": 370,
+    "aliases": []
+  },
+  {
+    "name": "花火",
+    "box": [
+      1476,
+      1195,
+      1530,
+      1249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 10000,
+    "id": "gift-sheet-14",
+    "image": "gifts/gift-sheet-14.png",
+    "sheetIndex": 371,
+    "aliases": []
+  },
+  {
+    "name": "あふれる想い",
+    "box": [
+      1548,
+      1195,
+      1602,
+      1249
+    ],
+    "group": "",
+    "source": "user-provided-gift-sheet",
+    "points": 30000,
+    "id": "gift-sheet-15",
+    "image": "gifts/gift-sheet-15.png",
+    "sheetIndex": 372,
+    "aliases": [
+      "溢れる想い",
+      "あふれるおもい"
+    ]
+  }
+]
