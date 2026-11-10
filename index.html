@@ -380,23 +380,75 @@ function randomGiftQuantity(gift){
     Number.isFinite(gift.pointsMin)&&gift.pointsMin>0?gift.pointsMin:
     Number.isFinite(gift.pointsMax)&&gift.pointsMax>0?gift.pointsMax:null;
   const ranges=[
-    [1,1,300,500],
-    [2,9,100,300],
-    [10,49,30,100],
-    [50,99,10,40],
-    [100,499,3,15],
-    [500,999,3,7],
-    [1000,3000,2,3],
-    [3001,5000,1,5],
-    [5001,9999,1,3],
-    [10000,Infinity,1,1]
+    [1,1,300,500],[2,9,100,300],[10,49,30,100],
+    [50,99,10,40],[100,499,3,15],[500,999,3,7],
+    [1000,3000,2,3],[3001,5000,1,5],
+    [5001,9999,1,3],[10000,Infinity,1,1]
   ];
   if(point===null)return [1,2,3,5,10][Math.floor(Math.random()*5)];
   const range=ranges.find(([min,max])=>point>=min&&point<=max)||ranges[ranges.length-1];
-  return range[2]+Math.floor(Math.random()*(range[3]-range[2]+1));
+  const [,,min,max]=range;
+  // 大きい個数は5・10・25・50刻みなど、見やすいきりのよい数字にする。
+  // 少数個のギフトは従来の範囲を守り、整数のまま抽選する。
+  const step=min>=300?50:min>=100?25:min>=30?10:min>=10?5:1;
+  const options=[];
+  for(let v=Math.ceil(min/step)*step;v<=max;v+=step)options.push(v);
+  if(!options.length)for(let v=min;v<=max;v++)options.push(v);
+  return options[Math.floor(Math.random()*options.length)];
+}
+// 高・中・低ポイント帯から順番に選び、同じ帯だけに偏らせない。
+function balancedRandomGifts(pool,count){
+  const known=pool.filter(g=>Number.isFinite(giftPointMinimum(g)));
+  const unknown=pool.filter(g=>!Number.isFinite(giftPointMinimum(g)));
+  const low=shuffleItems(known.filter(g=>giftPointMinimum(g)<100));
+  const middle=shuffleItems(known.filter(g=>giftPointMinimum(g)>=100&&giftPointMinimum(g)<1000));
+  const high=shuffleItems(known.filter(g=>giftPointMinimum(g)>=1000));
+  const buckets=[low,middle,high];
+  const selected=[];
+  // 3種類の帯があるときは、最初の3枠で必ず1つずつ選択。
+  while(selected.length<count&&buckets.some(b=>b.length)){
+    const round=shuffleItems(buckets.filter(b=>b.length));
+    for(const bucket of round){if(selected.length>=count)break;selected.push(bucket.pop())}
+  }
+  if(selected.length<count)selected.push(...shuffleItems(unknown).slice(0,count-selected.length));
+  return shuffleItems(selected);
 }
 
-function randomConditions(n,labels,visuals,all){let used=new Set(visuals.slice(0,n).filter(Boolean).map(g=>canonicalGiftKey(g,all))),pool=shuffleItems(all.filter(g=>g.kind!=='badge')).filter(g=>!used.has(canonicalGiftKey(g,all))),empty=Array.from({length:n},(_,i)=>i).filter(i=>!labels[i]?.trim()&&!visuals[i]),giftSlots=Math.min(pool.length,Math.round(empty.length*.4)),slots=shuffleItems(empty),result=[],definitions=[['ギフト合計',[10000,15000,20000,25000,30000],'pt'],['コメント',[300,350,400,450,500],'件'],['スター',[15000,20000,25000,30000],'個'],['配信シェア',[10,20,30,40,50],'回'],['入室',[10,20,30,40,50],'人']];let choices=[];for(let k=0;k<slots.length;k++){let index=slots[k];if(k<giftSlots){let gift;while(pool.length&&!gift){let candidate=pool.pop(),key=canonicalGiftKey(candidate,all);if(!used.has(key)){used.add(key);gift=candidate}}if(gift){let quantity=randomGiftQuantity(gift);result.push({index,label:gift.name+' ×'+quantity,visual:{giftId:gift.id,name:gift.name,image:gift.image,points:gift.points,pointsMin:gift.pointsMin,pointsMax:gift.pointsMax,quantity}});continue}}if(!choices.length)choices=shuffleItems(definitions);let [kind,amounts,unit]=choices.pop();result.push({index,label:kind+amounts[Math.floor(Math.random()*amounts.length)]+unit,visual:null})}return result}
+function randomConditions(n,labels,visuals,all){
+  const used=new Set(visuals.slice(0,n).filter(Boolean).map(g=>canonicalGiftKey(g,all)));
+  const available=shuffleItems(all.filter(g=>g.kind!=='badge')).filter(g=>!used.has(canonicalGiftKey(g,all)));
+  const empty=Array.from({length:n},(_,i)=>i).filter(i=>!labels[i]?.trim()&&!visuals[i]);
+  const giftSlots=Math.min(available.length,Math.round(empty.length*.4));
+  const giftPicks=balancedRandomGifts(available,giftSlots);
+  // 約40%の確率で超高額ギフト（10,000pt以上）を1枠に採用。
+  // 通常の低・中・高ポイントのバランスをできるだけ維持するため、
+  // 既存の高ポイント枠と入れ替え、同じギフトの重複は避ける。
+  const ultraCandidates=available.filter(g=>giftPointMinimum(g)>=10000);
+  if(giftSlots>0&&ultraCandidates.length&&Math.random()<0.40){
+    const selectedKeys=new Set(giftPicks.map(g=>canonicalGiftKey(g,all)));
+    const ultraPool=ultraCandidates.filter(g=>!selectedKeys.has(canonicalGiftKey(g,all)));
+    if(ultraPool.length){
+      const highSlots=giftPicks.map((g,i)=>({g,i})).filter(({g})=>giftPointMinimum(g)>=1000&&giftPointMinimum(g)<10000);
+      const replacement=highSlots.length?highSlots[Math.floor(Math.random()*highSlots.length)].i:giftPicks.length-1;
+      giftPicks[replacement]=ultraPool[Math.floor(Math.random()*ultraPool.length)];
+    }
+  }
+  const slots=shuffleItems(empty),result=[];
+  const definitions=[['ギフト合計',[10000,15000,20000,25000,30000],'pt'],['コメント',[300,350,400,450,500],'件'],['スター',[15000,20000,25000,30000],'個'],['配信シェア',[10,20,30,40,50],'回'],['入室',[10,20,30,40,50],'人']];
+  let choices=[];
+  for(let k=0;k<slots.length;k++){
+    const index=slots[k];
+    if(k<giftSlots&&giftPicks[k]){
+      const gift=giftPicks[k],quantity=randomGiftQuantity(gift);
+      result.push({index,label:gift.name+' ×'+quantity,visual:{giftId:gift.id,name:gift.name,image:gift.image,points:gift.points,pointsMin:gift.pointsMin,pointsMax:gift.pointsMax,quantity}});
+      continue;
+    }
+    if(!choices.length)choices=shuffleItems(definitions);
+    const [kind,amounts,unit]=choices.pop();
+    result.push({index,label:kind+amounts[Math.floor(Math.random()*amounts.length)]+unit,visual:null});
+  }
+  return result;
+}
 $('randomFill').onclick=async()=>{readConditions();let n=Number($('count').value);if(!Number.isInteger(n)||n<2||n>100)return;let planned=randomConditions(n,draftLabels,draftVisuals,catalog);if(!planned.length)return toast('空欄がありません。手入力欄を空にすると自動入力できます。');let button=$('randomFill');button.disabled=true;button.textContent='入力中…';try{await prepareGiftImages(planned.map(p=>p.visual));for(let p of planned){draftLabels[p.index]=p.label;draftVisuals[p.index]=p.visual}conditionRows();updatePreview();toast(planned.length+'枚の空欄を埋めました（ギフト重複なし）')}catch(e){toast('画像を読み込めなかったため変更しませんでした。もう一度お試しください。')}finally{button.disabled=false;button.textContent='✦ 適当に埋める'}};
 
 
