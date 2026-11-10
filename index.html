@@ -160,7 +160,7 @@ function path(ctx,p){ctx.beginPath();for(let ring of p.rings||[p]){ring.forEach(
 function draw(canvas,opened,source,ps,color,labels=[],visuals=[],textColor='#ffffff',panelType='square',appearance={},remainingValues=null){activeAppearance=normalizeAppearance(appearance);let ctx=canvas.getContext('2d'),w=canvas.width,h=canvas.height;ctx.clearRect(0,0,w,h);if(source)ctx.drawImage(source,0,0,w,h);else{let g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,'#d8e2ce');g.addColorStop(1,'#adc4b5');ctx.fillStyle=g;ctx.fillRect(0,0,w,h)}let rounded=['circle','oval','mixedRound'].includes(panelType),allOpen=ps.every((_,i)=>opened[i]);if(rounded&&!allOpen){ctx.fillStyle=color;ctx.fillRect(0,0,w,h);if(source)ps.forEach((p,i)=>{if(opened[i]){ctx.save();path(ctx,p);ctx.clip();ctx.drawImage(source,0,0,w,h);ctx.restore()}})}ps.forEach((p,i)=>{if(opened[i])return;path(ctx,p);ctx.fillStyle=color;ctx.fill();drawPanelDesign(ctx,p,i,activeAppearance.design);path(ctx,p);ctx.strokeStyle='#ffffffb0';ctx.lineWidth=Math.max(1,w/700);ctx.stroke();let remaining=remainingValues?.[i];if(remaining==='')remaining=null;if(activeAppearance.display==='numbers')drawLabel(ctx,p,String(i+1),textColor);else if(visuals[i])drawGift(ctx,p,visuals[i],textColor,remaining);else drawLabel(ctx,p,labels[i],textColor,remaining)})}
 
 // Draw the strike directly over the original numeral using the same typography and layout.
-function strikeNumber(ctx,line,x,y,font,color){let matches=[...String(line).matchAll(/\d[\d,]*/g)];if(!matches.length)return;let m=matches[matches.length-1],before=line.slice(0,m.index),number=m[0];ctx.save();ctx.font=panelFont(font);let full=ctx.measureText(line).width,offset=ctx.measureText(before).width,nw=ctx.measureText(number).width;let cx=x-full/2+offset+nw/2;ctx.shadowBlur=0;ctx.lineCap='round';ctx.strokeStyle=activeAppearance.font==='neon'?'#ff7ce9':activeAppearance.font==='outline'?'#7860bd':color;ctx.lineWidth=Math.max(1.5,font*.075);ctx.beginPath();ctx.moveTo(cx-nw*.46,y+font*.17);ctx.lineTo(cx+nw*.46,y-font*.17);ctx.stroke();ctx.restore()}
+function strikeNumber(ctx,line,x,y,font,color){let matches=[...String(line).matchAll(/\d[\d,]*/g)];if(!matches.length)return;let m=matches[matches.length-1],before=line.slice(0,m.index),number=m[0];ctx.save();ctx.font=panelFont(font);let full=ctx.measureText(line).width,offset=ctx.measureText(before).width,nw=ctx.measureText(number).width;let cx=x-full/2+offset+nw/2;ctx.shadowBlur=0;ctx.lineCap='round';ctx.strokeStyle=activeAppearance.font==='neon'?'#ff7ce9':activeAppearance.font==='outline'?'#7860bd':color;ctx.lineWidth=Math.max(2.5,font*.12);ctx.beginPath();ctx.moveTo(cx-nw*.46,y+font*.17);ctx.lineTo(cx+nw*.46,y-font*.17);ctx.stroke();ctx.restore()}
 function remainingLine(ctx,p,text,remaining,color){let b=labelBox(p),font=Math.max(7,Math.min(b.w*.14,b.h*.105,ctx.canvas.width*.03));ctx.save();path(ctx,p);ctx.clip();ctx.font=panelFont(font);ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=color;ctx.shadowColor=activeAppearance.font==='neon'?'#ff4ff5':'#0004';ctx.shadowBlur=activeAppearance.font==='neon'?Math.max(4,font*.36):2;let value='残り '+String(remaining);while(font>5&&ctx.measureText(value).width>b.w*.90){font-=.5;ctx.font=panelFont(font)}let y=b.y+b.h*.36;if(isHandFont())drawHandLine(ctx,value,b.x,y,font);else{if(activeAppearance.font==='outline'){ctx.strokeStyle='#7860bd';ctx.lineWidth=Math.max(1,font*.13);ctx.strokeText(value,b.x,y)}ctx.fillText(value,b.x,y)}ctx.restore()}
 function dimensions(c,source){c.width=source?(source.naturalWidth||source.width):720;c.height=source?(source.naturalHeight||source.height):900}
 function readConditions(){document.querySelectorAll('.conditionText').forEach((el,i)=>draftLabels[i]=el.value)}
@@ -248,11 +248,46 @@ function mixedShapePanels(n,w,h,seed){
  });return out;
 }
 function puzzlePanels(n,w,h,seed){
+ // Interlocking jigsaw pieces: each shared border is generated ONCE and
+ // reused in reverse by its neighbour, so tabs and sockets fit precisely.
  const cells=rectangleCells(Array(n).fill(1),w,h),edges=new Map();
- const key=(a,b)=>{let aa=a.map(v=>v.toFixed(4)).join(','),bb=b.map(v=>v.toFixed(4)).join(',');return aa<bb?aa+'|'+bb:bb+'|'+aa};
- cells.forEach(c=>{let q=[[c.x,c.y],[c.x+c.w,c.y],[c.x+c.w,c.y+c.h],[c.x,c.y+c.h]];for(let k=0;k<4;k++){let a=q[k],b=q[(k+1)%4],id=key(a,b);edges.set(id,(edges.get(id)||0)+1)}});
+ const pointKey=p=>p.map(v=>v.toFixed(4)).join(',');
+ const key=(a,b)=>{let aa=pointKey(a),bb=pointKey(b);return aa<bb?aa+'|'+bb:bb+'|'+aa};
+ cells.forEach(c=>{let q=[[c.x,c.y],[c.x+c.w,c.y],[c.x+c.w,c.y+c.h],[c.x,c.y+c.h]];for(let k=0;k<4;k++){let id=key(q[k],q[(k+1)%4]);edges.set(id,(edges.get(id)||0)+1)}});
  const rng=seededRandom(seed||777),profiles=new Map();
- function edge(a,b){let id=key(a,b),shared=edges.get(id)>1,len=Math.hypot(b[0]-a[0],b[1]-a[1]);if(!shared||len<Math.min(w,h)*.16)return [a,b];let f=profiles.get(id);if(!f){let canon=id.split('|').map(t=>t.split(',').map(Number)),A=canon[0],B=canon[1],dx=B[0]-A[0],dy=B[1]-A[1],length=Math.hypot(dx,dy),sign=rng()<.5?-1:1,depth=Math.min(length*.15,Math.min(w,h)*.055),pts=[];for(let j=0;j<=28;j++){let t=j/28,v=0;if(t>.27&&t<.73){let q=(t-.27)/.46;v=sign*depth*Math.pow(Math.sin(Math.PI*q),2)*Math.sign(Math.cos(2*Math.PI*q))}pts.push([A[0]+dx*t-dy/length*v,A[1]+dy*t+dx/length*v])}f=pts;profiles.set(id,f)}let canonical=id.split('|')[0],start=a.map(v=>v.toFixed(4)).join(',');return start===canonical?f:f.slice().reverse()}
+ function edge(a,b){
+  const id=key(a,b),len=Math.hypot(b[0]-a[0],b[1]-a[1]);
+  if(edges.get(id)!==2||len<Math.min(w,h)*.11)return [a,b];
+  let pts=profiles.get(id);
+  if(!pts){
+   const [A,B]=id.split('|').map(t=>t.split(',').map(Number));
+   const dx=B[0]-A[0],dy=B[1]-A[1],L=Math.hypot(dx,dy);
+   const sign=rng()<.5?-1:1;
+   // Wide, rounded puzzle head with a distinctly narrower neck.
+   const depth=Math.min(L*.30,Math.min(w,h)*.095);
+   const shift=(rng()-.5)*.12;
+   const local=[];
+   const line=(t,v)=>local.push([t,v]);
+   const curve=(p0,p1,p2,p3)=>{
+    for(let i=1;i<=12;i++){let t=i/12,u=1-t;
+     line(u*u*u*p0[0]+3*u*u*t*p1[0]+3*u*t*t*p2[0]+t*t*t*p3[0],
+          u*u*u*p0[1]+3*u*u*t*p1[1]+3*u*t*t*p2[1]+t*t*t*p3[1]);
+    }
+   };
+   line(0,0);line(.31+shift,0);
+   curve([.31+shift,0],[.39+shift,0],[.40+shift,.08],[.39+shift,.14]);
+   curve([.39+shift,.14],[.29+shift,.15],[.29+shift,.38],[.37+shift,.53]);
+   curve([.37+shift,.53],[.44+shift,.68],[.56+shift,.68],[.63+shift,.53]);
+   curve([.63+shift,.53],[.71+shift,.38],[.71+shift,.15],[.61+shift,.14]);
+   curve([.61+shift,.14],[.60+shift,.08],[.61+shift,0],[.69+shift,0]);
+   line(1,0);
+   pts=local.map(([t,v])=>[A[0]+dx*t-dy/L*v*depth*sign,A[1]+dy*t+dx/L*v*depth*sign]);
+   // Preserve the exact endpoints used by the rectangular tiling.
+   pts[0]=A;pts[pts.length-1]=B;
+   profiles.set(id,pts);
+  }
+  return pointKey(a)===id.split('|')[0]?pts:pts.slice().reverse();
+ }
  return cells.map(c=>{let q=[[c.x,c.y],[c.x+c.w,c.y],[c.x+c.w,c.y+c.h],[c.x,c.y+c.h]],p=[];for(let k=0;k<4;k++){let e=edge(q[k],q[(k+1)%4]);p.push(...e.slice(0,-1))}return p});
 }
 function geometryStandard(n,type,w,h){let key=[n,type,w,h,['mixedShapes','randomTriangle','puzzle'].includes(type)?shapeSeed:0].join(':'),cached=geometryCache.get(key);if(cached)return cached;let out=[];if(type==='puzzle'){out=puzzlePanels(n,w,h,shapeSeed)}else if(type==='randomTriangle'){out=randomTrianglePanels(n,w,h,shapeSeed)}else if(type==='trueSquare'){out=trueSquarePanels(n,w,h)}else if(type==='mixedShapes'){out=mixedShapePanels(n,w,h,shapeSeed)}else if(type==='mixedRound'){out=mixedRoundPanels(n,w,h)}else if(type==='circle'||type==='oval'){out=rectangleCells(Array(n).fill(1),w,h,type==='oval'?1.6:1).map(c=>{let rx=c.w/2,ry=c.h/2;if(type==='circle')rx=ry=Math.min(rx,ry);else if(Math.max(rx/ry,ry/rx)<1.3)ry=Math.min(ry,rx/1.6);return Array.from({length:64},(_,i)=>[c.x+c.w/2+rx*Math.cos(i*Math.PI/32),c.y+c.h/2+ry*Math.sin(i*Math.PI/32)])})}else if(type==='pentagon')out=cairoPanels(n,w,h);else if(type==='square'){out=rectangleCells(Array(n).fill(1),w,h).map(c=>[[c.x,c.y],[c.x+c.w,c.y],[c.x+c.w,c.y+c.h],[c.x,c.y+c.h]])}else{let weights=Array(Math.floor(n/2)).fill(2);if(n%2)weights[weights.length-1]=3;for(let c of rectangleCells(weights,w,h)){let a=[c.x,c.y],b=[c.x+c.w,c.y],d=[c.x,c.y+c.h],e=[c.x+c.w,c.y+c.h];if(c.weight===2)out.push([a,b,d],[b,e,d]);else{let m=[(b[0]+d[0])/2,(b[1]+d[1])/2];out.push([a,b,d],[b,e,m],[m,e,d])}}}geometryCache.set(key,out);if(geometryCache.size>15)geometryCache.delete(geometryCache.keys().next().value);return out}
@@ -285,7 +320,46 @@ function ensureGiftImage(src){let cached=assetImages.get(src);if(cached)return c
 async function prepareGiftImages(visuals){for(let i=0;i<visuals.length;i+=8)await Promise.all(visuals.slice(i,i+8).filter(Boolean).map(g=>ensureGiftImage(g.image)))}
 function embedGiftImage(src){let im=assetImages.get(src)?.image;if(!im?.complete||!im.naturalWidth)throw Error('ギフト画像の読み込み中です');let c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;c.getContext('2d').fillStyle='#ffffff';c.getContext('2d').fillRect(0,0,c.width,c.height);c.getContext('2d').drawImage(im,0,0);return c.toDataURL('image/png')}
 function giftLayout(box,iw,ih,quantity,measure){let font=Math.min(box.h*.18,box.w*.23),label='×'+quantity;while(font>1&&measure(label,font)>box.w)font-=.5;let gap=box.h*.035,availableH=Math.max(1,box.h-font*1.25-gap),scale=Math.min(box.w/iw,availableH/ih),w=iw*scale,h=ih*scale,total=h+gap+font*1.25;return {x:box.x-w/2,y:box.y-total/2,w,h,font,textY:box.y-total/2+h+gap+font*.625}}
-function drawGift(ctx,p,gift,textColor='#ffffff',remaining=null){let im=assetImages.get(gift.image)?.image;if(!im?.complete||!im.naturalWidth){ensureGiftImage(gift.image).then(()=>{$('live').classList.contains('hidden')?updatePreview():render()}).catch(()=>{});drawLabel(ctx,p,'画像を読込中…',textColor);return}let box=labelBox(p),hasRemaining=remaining!==null&&remaining!==undefined,giftBox=hasRemaining?{...box,y:box.y-box.h*.14,h:box.h*.67}:box,layout=giftLayout(giftBox,im.naturalWidth,im.naturalHeight,gift.quantity,(text,font)=>{ctx.font=panelFont(font);return ctx.measureText(text).width});ctx.save();path(ctx,p);ctx.clip();ctx.fillStyle='#ffffff';ctx.fillRect(layout.x,layout.y,layout.w,layout.h);ctx.drawImage(im,layout.x,layout.y,layout.w,layout.h);ctx.fillStyle=textColor;ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=panelFont(layout.font);isHandFont()?drawHandLine(ctx,'×'+gift.quantity,box.x,layout.textY,layout.font):ctx.fillText('×'+gift.quantity,box.x,layout.textY,box.w);if(remaining!==null&&remaining!==undefined)strikeNumber(ctx,'×'+gift.quantity,box.x,layout.textY,layout.font,textColor);ctx.restore();if(remaining!==null&&remaining!==undefined)remainingLine(ctx,p,'',remaining,textColor)}
+function drawGift(ctx,p,gift,textColor='#ffffff',remaining=null){
+ let im=assetImages.get(gift.image)?.image;
+ if(!im?.complete||!im.naturalWidth){ensureGiftImage(gift.image).then(()=>{$('live').classList.contains('hidden')?updatePreview():render()}).catch(()=>{});drawLabel(ctx,p,'画像を読込中…',textColor);return}
+ const box=labelBox(p),hasRemaining=remaining!==null&&remaining!==undefined;
+ const label='×'+gift.quantity;
+ const measure=(text,font)=>{ctx.font=panelFont(font);return ctx.measureText(text).width};
+ // If the bottom quantity would make the gift image too small, move it to the right.
+ const bottomBox=hasRemaining?{...box,y:box.y-box.h*.14,h:box.h*.67}:box;
+ const bottom=giftLayout(bottomBox,im.naturalWidth,im.naturalHeight,gift.quantity,measure);
+ const sideFont=Math.max(7,Math.min(box.h*.19,box.w*.16,ctx.canvas.width*.045));
+ const sideTextW=measure(label,sideFont);
+ const sideGap=Math.max(3,box.w*.035);
+ const sideImageW=Math.max(1,box.w-sideTextW-sideGap);
+ const sideImageH=hasRemaining?box.h*.67:box.h*.9;
+ const sideScale=Math.min(sideImageW/im.naturalWidth,sideImageH/im.naturalHeight);
+ const sideW=im.naturalWidth*sideScale,sideH=im.naturalHeight*sideScale;
+ const bottomArea=bottom.w*bottom.h,sideArea=sideW*sideH;
+ const side=sideImageW>box.w*.30&&sideW>0&&sideArea>bottomArea*1.17;
+ let imageX,imageY,imageW,imageH,textX,textY,font;
+ if(side){
+   imageW=sideW;imageH=sideH;
+   const groupW=sideW+sideGap+sideTextW;
+   imageX=box.x-groupW/2;
+   imageY=box.y-(hasRemaining?box.h*.13:0)-sideH/2;
+   textX=imageX+sideW+sideGap+sideTextW/2;
+   textY=imageY+sideH/2;
+   font=sideFont;
+ }else{
+   imageX=bottom.x;imageY=bottom.y;imageW=bottom.w;imageH=bottom.h;
+   textX=box.x;textY=bottom.textY;font=bottom.font;
+ }
+ ctx.save();path(ctx,p);ctx.clip();
+ ctx.fillStyle='#ffffff';ctx.fillRect(imageX,imageY,imageW,imageH);
+ ctx.drawImage(im,imageX,imageY,imageW,imageH);
+ ctx.fillStyle=textColor;ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=panelFont(font);
+ if(isHandFont())drawHandLine(ctx,label,textX,textY,font);else ctx.fillText(label,textX,textY);
+ if(hasRemaining)strikeNumber(ctx,label,textX,textY,font,textColor);
+ ctx.restore();
+ if(hasRemaining)remainingLine(ctx,p,'',remaining,textColor);
+}
 
 function dbValue(key,value){return new Promise((resolve,reject)=>{let open=indexedDB.open('panel-studio',1);open.onupgradeneeded=()=>open.result.createObjectStore('projects');open.onerror=()=>reject(open.error);open.onsuccess=()=>{let tx=open.result.transaction('projects',value===undefined?'readonly':'readwrite'),request=value===undefined?tx.objectStore('projects').get(key):tx.objectStore('projects').put(value,key);request.onsuccess=()=>resolve(request.result);tx.oncomplete=()=>open.result.close();tx.onerror=()=>reject(tx.error)}})}
 async function initCatalog(){catalog=JSON.parse(document.getElementById('bundledGifts').textContent);try{let custom=await dbValue('giftCatalog');if(Array.isArray(custom))catalog.push(...custom)}catch(e){}renderGiftGrid()}
