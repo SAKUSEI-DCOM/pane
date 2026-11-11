@@ -891,31 +891,59 @@ $id('revealMode').addEventListener('change',()=>{if(characterMode()&&!revealBack
  const oldGeometry=geometry;
  geometry=function(n,type,w,h){
   if(!characterMode()||!revealCharacter||split.value==='adaptive')return oldGeometry(n,type,w,h);
-  // Only split the vertical extent occupied by the positioned character.
-  const mask=positionedCharacter(256,256),d=mask.getContext('2d').getImageData(0,0,256,256).data;
-  let top=255,bottom=0;
-  for(let y=0;y<256;y++)for(let x=0;x<256;x++)if(d[(y*256+x)*4+3]>24){top=Math.min(top,y);bottom=Math.max(bottom,y)}
+  // Compute all bands from the *extracted character alpha*, never the image canvas.
+  const mask=positionedCharacter(512,512),d=mask.getContext('2d').getImageData(0,0,512,512).data;
+  let top=512,bottom=-1;
+  const rows=new Uint16Array(512);
+  for(let y=0;y<512;y++)for(let x=0;x<512;x++)if(d[(y*512+x)*4+3]>32){
+    rows[y]++;top=Math.min(top,y);bottom=Math.max(bottom,y);
+  }
   if(bottom<=top)return oldGeometry(n,type,w,h);
-  const minY=top/256*h,maxY=(bottom+1)/256*h;
-  let boundaries;
-  if(split.value==='headwaistfeet'){
-    // Three sections: upper/head, middle/waist, lower/feet.
-    boundaries=[0,minY+(maxY-minY)*.34,minY+(maxY-minY)*.70,h];
-    n=3;
-  }else if(split.value==='headbodyfeet'){
-    // Prefer character landmarks while allowing the requested number of panels.
-    const ratios=[0,.33,.70,1];
-    boundaries=Array.from({length:n+1},(_,i)=>{
-      const t=i/n*3,k=Math.min(2,Math.floor(t));return i===0?0:i===n?h:minY+(maxY-minY)*(ratios[k]+(ratios[k+1]-ratios[k])*(t-k));
+  const minY=top/512*h,maxY=(bottom+1)/512*h,extent=maxY-minY;
+  let ratios;
+  if(split.value==='headwaistfeet'){ratios=[0,.34,.70,1];n=3;}
+  else if(split.value==='headbodyfeet'){
+    // Three anatomical regions, subdivided if the user requests more panels.
+    const landmarks=[0,.30,.68,1];
+    ratios=Array.from({length:n+1},(_,i)=>{
+      const t=i/n*3,k=Math.min(2,Math.floor(t));
+      return landmarks[k]+(landmarks[k+1]-landmarks[k])*(t-k);
     });
-  }else boundaries=Array.from({length:n+1},(_,i)=>i===0?0:i===n?h:minY+(maxY-minY)*i/n);
+  }else ratios=Array.from({length:n+1},(_,i)=>i/n);
   const ps=[];
   for(let i=0;i<n;i++){
-   const y1=Math.max(0,boundaries[i]),y2=Math.min(h,boundaries[i+1]);
-   const p=[[0,y1],[w,y1],[w,y2],[0,y2]];
-   p.rings=[p.map(v=>v.slice())];p.labelRect={x:w*.20,y:y1,w:w*.60,h:Math.max(1,y2-y1)};ps.push(p);
+    const y1=minY+extent*ratios[i],y2=minY+extent*ratios[i+1];
+    // Tighten each panel to the character pixels within its own band.
+    let left=512,right=-1,first=512,last=-1;
+    const sy1=Math.max(0,Math.floor(y1/h*512)),sy2=Math.min(512,Math.ceil(y2/h*512));
+    for(let yy=sy1;yy<sy2;yy++)for(let xx=0;xx<512;xx++){
+      if(d[(yy*512+xx)*4+3]>32){left=Math.min(left,xx);right=Math.max(right,xx);first=Math.min(first,yy);last=Math.max(last,yy)}
+    }
+    if(right<left){left=256;right=256;first=sy1;last=sy2-1;}
+    const x1=Math.max(0,left/512*w),x2=Math.min(w,(right+1)/512*w);
+    const p=[[x1,y1],[x2,y1],[x2,y2],[x1,y2]];
+    p.rings=[p.map(v=>v.slice())];p.labelRect={x:x1,y:y1,w:Math.max(1,x2-x1),h:Math.max(1,y2-y1)};ps.push(p);
   }
   return ps;
+ };
+ // Draw the visible divider only where the character actually exists.
+ // A silhouette alpha mask clips every divider; background pixels remain untouched.
+ const beforeCharacterDivider=draw;
+ draw=function(canvas,opened,source,ps,color,labels,visuals,textColor,panelType,appearance,remainingValues){
+   beforeCharacterDivider.apply(this,arguments);
+   if(!characterMode()||!revealCharacter||split.value==='adaptive'||!ps?.length)return;
+   const w=canvas.width,h=canvas.height;
+   const character=positionedCharacter(w,h),seams=makeLayer(w,h),sg=seams.getContext('2d');
+   for(let i=0;i<ps.length-1;i++){
+     if(opened?.[i]||opened?.[i+1])continue;
+     const y=ps[i][2]?.[1];if(!Number.isFinite(y))continue;
+     sg.lineCap='round';sg.beginPath();sg.moveTo(0,y);sg.lineTo(w,y);
+     sg.strokeStyle='rgba(255,255,255,.95)';sg.lineWidth=Math.max(4,w/170);sg.stroke();
+     sg.beginPath();sg.moveTo(0,y);sg.lineTo(w,y);
+     sg.strokeStyle='rgba(12,20,22,.98)';sg.lineWidth=Math.max(2,w/330);sg.stroke();
+   }
+   sg.globalCompositeOperation='destination-in';sg.drawImage(character,0,0);
+   canvas.getContext('2d').drawImage(seams,0,0);
  };
  // The special three-band option must match the panel count in preview, conditions and live state.
  function adjustCount(){if(characterMode()&&split.value==='headwaistfeet'){
