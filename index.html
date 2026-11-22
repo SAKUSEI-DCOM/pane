@@ -1168,7 +1168,7 @@ renderGiftGrid();
 (async()=>{
  const panel=document.createElement('section');panel.className='card';panel.id='handoffPanel';panel.style.cssText='margin:12px 0;padding:16px;border:1px solid #cbdccf;border-radius:14px';
  panel.innerHTML='<h3 style="margin-top:0">💾 自動保存・引き継ぎコード</h3><p class="help">このブラウザ内に作業データを自動保存します。別端末へ移す場合はパネル作成ページから引き継ぎコードを入力して復元すると、保存されたパネルの続きが開きます。別端末はコードを送って貼り付けてください。Googleログイン・専用パスワード不要です。</p><div id="handoffStatus" class="help" role="status">自動保存待機中</div><div class="toolbar"><button type="button" id="handoffMake" class="primary">引き継ぎコードを作成</button><button type="button" id="handoffCopy">コードをコピー</button><button type="button" id="handoffRestore">コードから復元してパネルを開く</button><button type="button" id="handoffDownload">バックアップJSONを保存</button><button type="button" id="handoffFileLoad">JSONから復元</button></div><textarea id="handoffText" rows="5" placeholder="引き継ぎコードをここに表示／貼り付け" style="width:100%;resize:vertical"></textarea><input type="file" id="handoffJsonFile" accept=".json,application/json" hidden>';
- const setup=document.querySelector('#setup'),live=document.querySelector('#live');if(setup)setup.prepend(panel);else if(live)live.prepend(panel);
+ const setup=document.querySelector('#setup'),live=document.querySelector('#live'),main=document.querySelector('main');if(main)main.append(panel);else if(setup)setup.append(panel);else if(live)live.append(panel);
  const $=id=>document.getElementById(id),status=m=>{const el=$('handoffStatus');if(el)el.textContent=m},DB='panel-biraki-local-v2',KEY='latest';
  function openDB(){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB,1);req.onupgradeneeded=()=>req.result.createObjectStore('autosave');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
  async function saveLocal(v){if(!v)return;try{const db=await openDB();await new Promise((resolve,reject)=>{const tx=db.transaction('autosave','readwrite');tx.objectStore('autosave').put(v,KEY);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});db.close();status('自動保存済み · '+new Date().toLocaleTimeString())}catch(e){status('自動保存失敗：'+e.message)}}
@@ -1245,6 +1245,45 @@ renderGiftGrid();
    document.getElementById('setup').scrollIntoView({behavior:'smooth',block:'start'});
   }catch(e){console.error(e);if(status)status.textContent='画像からの再構成に失敗しました：'+(e.message||e)}
  };
+})();
+</script>
+<style>
+#quickRestoreHub{margin:0 0 22px;padding:16px;background:#fff;border:1px solid #cbdccf;border-radius:16px;box-shadow:0 3px 14px #263d3010}
+#quickRestoreHub h2{margin:0 0 8px;font-size:17px}
+#quickRestoreHub .quick-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#quickRestoreHub button{width:100%;min-height:46px;margin:0;white-space:normal}
+#quickRestoreHub #handoffText{margin-top:8px;min-height:72px}
+#quickRestoreHub .help{margin:5px 0 10px}
+@media(max-width:600px){#quickRestoreHub{padding:12px;margin-bottom:14px}#quickRestoreHub .quick-actions{grid-template-columns:1fr}#quickRestoreHub button{font-size:14px;padding:10px 12px;min-height:44px}#quickRestoreHub #resume{display:block!important}}
+</style>
+<script>
+(function(){
+ function buildTopRestoreHub(){
+  const main=document.querySelector('main'); if(!main||document.getElementById('quickRestoreHub'))return;
+  const hub=document.createElement('section');hub.id='quickRestoreHub';hub.className='card';
+  hub.innerHTML='<h2>📂 保存データ・設定の復元</h2><p class="help">前回の作業を再開したり、バックアップ・共有設定を読み込めます。引き継ぎコードは下に貼り付けて復元してください。</p><div class="quick-actions" id="quickRestoreActions"></div><div id="quickCodeRestoreArea"><div id="handoffStatusTop" class="help" role="status"></div></div>';
+  main.insertBefore(hub,main.firstChild);
+  const actions=hub.querySelector('#quickRestoreActions');
+  ['resume','importButton','shareSettingsImport'].forEach(id=>{const el=document.getElementById(id);if(el){el.classList.remove('hidden');actions.appendChild(el)}});
+  const codeArea=hub.querySelector('#quickCodeRestoreArea');
+  const restoreBtn=document.getElementById('handoffRestore');const codeText=document.getElementById('handoffText');
+  if(restoreBtn&&codeText){
+   const holder=document.createElement('div');holder.className='quick-code-row';holder.style.marginTop='10px';
+   holder.appendChild(codeText);holder.appendChild(restoreBtn);codeArea.appendChild(holder);
+   restoreBtn.textContent='引き継ぎコードから復元して開く';restoreBtn.style.width='100%';
+   codeText.placeholder='引き継ぎコードを貼り付け';codeText.rows=3;
+  }
+  const statusOld=document.getElementById('handoffStatus');if(statusOld){statusOld.style.display='none'}
+  // Mobile/Desktop: resume button remains visible even before an autosave exists.
+  const resume=document.getElementById('resume');if(resume){resume.classList.remove('hidden');resume.style.display='block';resume.onclick=async()=>{
+    resume.disabled=true;resume.textContent='保存データを読み込み中…';
+    try{const saved=await getLocal();if(!saved||!saved.image)throw new Error('この端末・ブラウザに前回の自動保存データがありません');await restore(saved);if(!data?.image||data.image!==saved.image)throw new Error('保存データを復元できませんでした');
+      resume.textContent='前回のパネル開けを再開';
+    }catch(err){if(typeof toast==='function')toast(err.message||'再開できませんでした');else alert(err.message||'再開できませんでした')}
+    finally{resume.disabled=false;resume.textContent='前回のパネル開けを再開'}
+   }}
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',buildTopRestoreHub);else buildTopRestoreHub();
 })();
 </script>
 </body></html>
