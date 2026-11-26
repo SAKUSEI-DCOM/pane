@@ -1427,7 +1427,23 @@ renderGiftGrid();
  const oldLoad=window.loadImage; if(typeof oldLoad==='function')window.loadImage=function(){const r=oldLoad.apply(this,arguments);Promise.resolve(r).then(()=>schedule());return r};
  const oldConditions=window.conditionRows;if(typeof oldConditions==='function')window.conditionRows=function(){const r=oldConditions.apply(this,arguments);schedule();return r};
  window.addEventListener('beforeunload',()=>{try{save()}catch(e){}});window.addEventListener('pagehide',()=>{try{save()}catch(e){}});setInterval(()=>{if(!restoring)save()},15000);
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(restoreDraft,1200));else setTimeout(restoreDraft,1200);
+ // Reload recovery: retry briefly because IndexedDB/image libraries may initialize late.
+ async function autoRestoreOnReload(){
+  // If the last page was the live panel screen, its own 'latest' record is restored by the live-view handler.
+  try{if(localStorage.getItem('panelBirakiLastView')==='live')return}catch(e){}
+  for(let attempt=0;attempt<6;attempt++){
+   const ok=await restoreDraft();
+   if(ok){
+    const setup=document.getElementById('setup'),live=document.getElementById('live');
+    if(setup)setup.classList.remove('hidden');if(live)live.classList.add('hidden');
+    try{localStorage.setItem('panelBirakiLastView','setup')}catch(e){}
+    const status=document.getElementById('handoffStatusTop');if(status)status.textContent='前回のパネル作成途中を自動復元しました。続きから編集できます。';
+    return;
+   }
+   await new Promise(r=>setTimeout(r,700));
+  }
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(autoRestoreOnReload,900));else setTimeout(autoRestoreOnReload,900);
 })();
 </script>
 
