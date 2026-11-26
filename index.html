@@ -1319,20 +1319,28 @@ renderGiftGrid();
   // Mobile/Desktop: resume button remains visible even before an autosave exists.
   // This handler is in a separate scope, so it must not call the private getLocal() helper.
   const resume=document.getElementById('resume');if(resume){resume.classList.remove('hidden');resume.style.display='block';resume.onclick=async()=>{
-    resume.disabled=true;resume.textContent='保存データを読み込み中…';
-    try{let saved=await (async()=>{const db=await new Promise((resolve,reject)=>{const req=indexedDB.open('panel-biraki-local-v2',1);req.onupgradeneeded=()=>req.result.createObjectStore('autosave');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});try{return await new Promise((resolve,reject)=>{const q=db.transaction('autosave','readonly').objectStore('autosave').get('latest');q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)})}finally{db.close()}})();
-     if(!saved?.image){
-      const legacy=await new Promise((resolve,reject)=>{const req=indexedDB.open('panel-studio');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});
-      try{if(legacy.objectStoreNames.contains('projects')){saved=await new Promise((resolve,reject)=>{const q=legacy.transaction('projects','readonly').objectStore('projects').get('current');q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)})}}finally{legacy.close()}
-     }
-     if(!saved?.image)throw new Error('この端末・ブラウザに前回の自動保存データがありません');
-     await restore(saved);
-     if(!data?.image||data.image!==saved.image)throw new Error('保存データを復元できませんでした');
-      resume.textContent='前回のパネル開けを再開';
+    resume.disabled=true;resume.textContent='保存記録を確認中…';
+    try{
+      // Prefer setup-in-progress draft, so the user returns to the matching screen.
+      let draft=null;
+      try{const d=await new Promise((resolve,reject)=>{const req=indexedDB.open('panel-biraki-local-v2',1);req.onupgradeneeded=()=>req.result.createObjectStore('autosave');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});try{draft=await new Promise((resolve,reject)=>{const q=d.transaction('autosave','readonly').objectStore('autosave').get('setupDraft');q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)})}finally{d.close()}}catch(e){console.warn('Draft record read failed',e)}
+      if(draft?.image){
+        // Rebuild the creation page from the setup snapshot, not the reveal screen.
+        const ok=await window.panelBirakiRestoreDraft?.();if(!ok)throw new Error('作成途中の記録はありますが、復元できませんでした。ページを更新して再度お試しください');
+        document.getElementById('live')?.classList.add('hidden');document.getElementById('setup')?.classList.remove('hidden');
+        try{localStorage.setItem('panelBirakiLastView','setup')}catch(e){};location.hash='setup';window.scrollTo(0,0);
+        resume.textContent='前回のパネル開けを再開';
+      }else{
+        let saved=null;try{saved=await getLocal()}catch(e){}
+        if(!saved?.image){const legacy=await new Promise((resolve,reject)=>{const req=indexedDB.open('panel-studio');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});try{if(legacy.objectStoreNames.contains('projects'))saved=await new Promise((resolve,reject)=>{const q=legacy.transaction('projects','readonly').objectStore('projects').get('current');q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)})}finally{legacy.close()}}
+        if(!saved?.image)throw new Error('この端末に作成途中・パネル開け中の保存記録が見つかりません');
+        await restore(saved);if(!data?.image||data.image!==saved.image)throw new Error('パネル開けデータの復元に失敗しました');try{localStorage.setItem('panelBirakiLastView','live')}catch(e){};location.hash='live';resume.textContent='前回のパネル開けを再開';
+      }
     }catch(err){console.error('Resume button failed:',err);if(typeof toast==='function')toast(err.message||'再開できませんでした');else alert(err.message||'再開できませんでした')}
     finally{resume.disabled=false;resume.textContent='前回のパネル開けを再開'}
    }}
  }
+
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',buildTopRestoreHub);else buildTopRestoreHub();
 })();
 </script>
@@ -1396,22 +1404,29 @@ renderGiftGrid();
  async function save(){if(restoring)return;const v=snapshot();if(!v)return;try{const d=await db();await new Promise((resolve,reject)=>{const t=d.transaction('autosave','readwrite');t.objectStore('autosave').put(v,KEY);t.oncomplete=resolve;t.onerror=()=>reject(t.error)});d.close();const status=document.getElementById('handoffStatusTop');if(status)status.textContent='作成途中の内容を自動保存しました（操作後約1.8秒で保存）';}catch(e){console.warn('Draft autosave unavailable',e)}}
  function schedule(){if(restoring)return;clearTimeout(timer);timer=setTimeout(save,1800)}
  function giftLookup(v){if(!v)return null;let g=(catalog||[]).find(x=>x.id===v.giftId);if(!g&&v.name)g=(catalog||[]).find(x=>x.name===v.name);if(!g)return {...v,image:v.image||''};return {...v,image:g.image,name:g.name,points:g.points??v.points,pointsMin:g.pointsMin??v.pointsMin,pointsMax:g.pointsMax??v.pointsMax};}
- async function restoreDraft(){try{const d=await db();let v=await new Promise((resolve,reject)=>{const q=d.transaction('autosave','readonly').objectStore('autosave').get(KEY);q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)});d.close();if(!v||!v.image)return;
+ async function restoreDraft(){try{const d=await db();let v=await new Promise((resolve,reject)=>{const q=d.transaction('autosave','readonly').objectStore('autosave').get(KEY);q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error)});d.close();if(!v||!v.image)return false;
   restoring=true;
+  // Re-register custom gift images first so panel selections can be resolved on updated site versions.
+  if(Array.isArray(v.customGifts)){for(const cg of v.customGifts){if(cg?.id&&cg?.image&&!catalog.some(g=>g.id===cg.id)){catalog.push({...cg,custom:true})}}}
   const im=new Image();im.src=v.image;await im.decode();img=im;originalImageData=v.image;const up=document.getElementById('uploadLabel');if(up)up.textContent='前回の作業画像を復元';
   shape=v.shape||'square';const shapeBtn=document.querySelector('[data-shape="'+shape+'"]');if(shapeBtn)shapeBtn.click();
-  for(const id of ids){const el=document.getElementById(id);if(el&&v.fields&&v.fields[id]!==undefined){if(el.type==='checkbox')el.checked=!!v.fields[id];else el.value=v.fields[id]}}
+  for(const id of ids){const el=document.getElementById(id);if(el&&v.fields&&v.fields[id]!==undefined){const val=v.fields[id];if(el.type==='checkbox'||el.type==='radio')el.checked=typeof val==='object'?!!val.checked:!!val;else el.value=typeof val==='object'?(val.value??''):val}}
   const n=Math.max(2,Math.min(100,Number(v.fields?.count)||v.labels?.length||12));document.getElementById('count').value=n;
   draftLabels=Array.from({length:n},(_,i)=>v.labels?.[i]||'');draftVisuals=Array.from({length:n},(_,i)=>giftLookup(v.visuals?.[i]));draftPanelColors=Array.from({length:n},(_,i)=>v.panelColors?.[i]||null);
+  if(Array.isArray(v.specialChoices)){for(const sc of v.specialChoices){const el=document.querySelector('[data-special="'+sc.key+'"]');if(el)el.checked=!!sc.checked}}
+  if(v.mixPositions&&typeof mixPositions!=='undefined'){Object.keys(mixPositions).forEach(k=>delete mixPositions[k]);Object.assign(mixPositions,v.mixPositions)}
+  if(v.reveal&&typeof restoreReveal==='function'){await restoreReveal(v.reveal);if(typeof composeReveal==='function'&&v.reveal.mode!=='normal')composeReveal()}
+  if(v.appearance&&typeof syncAppearance==='function'){try{syncAppearance(v.appearance)}catch(e){console.warn('Appearance restore skipped',e)}}
   if(typeof conditionRows==='function')conditionRows();if(typeof update==='function')update();if(typeof updatePreview==='function')updatePreview();
-  restoring=false;const status=document.getElementById('handoffStatusTop');if(status)status.textContent='前回の作成途中の作業を復元しました';
- }catch(e){restoring=false;console.warn('Draft restore skipped',e)}}
+  restoring=false;const status=document.getElementById('handoffStatusTop');if(status)status.textContent='前回の作成途中の作業を復元しました';return true;
+ }catch(e){restoring=false;console.warn('Draft restore skipped',e);return false}}
+ window.panelBirakiRestoreDraft=restoreDraft;
  document.addEventListener('input',schedule,true);document.addEventListener('change',schedule,true);document.addEventListener('click',e=>{if(e.target.closest('button'))schedule()},true);
  // Image upload and gift picker operations may finish asynchronously; schedule an additional snapshot afterward.
  const uploadLabel=document.getElementById('uploadLabel');if(uploadLabel&&window.MutationObserver){new MutationObserver(()=>schedule()).observe(uploadLabel,{childList:true,subtree:true,characterData:true});}
  const oldLoad=window.loadImage; if(typeof oldLoad==='function')window.loadImage=function(){const r=oldLoad.apply(this,arguments);Promise.resolve(r).then(()=>schedule());return r};
  const oldConditions=window.conditionRows;if(typeof oldConditions==='function')window.conditionRows=function(){const r=oldConditions.apply(this,arguments);schedule();return r};
- window.addEventListener('beforeunload',()=>{try{save()}catch(e){}});
+ window.addEventListener('beforeunload',()=>{try{save()}catch(e){}});window.addEventListener('pagehide',()=>{try{save()}catch(e){}});setInterval(()=>{if(!restoring)save()},15000);
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(restoreDraft,1200));else setTimeout(restoreDraft,1200);
 })();
 </script>
